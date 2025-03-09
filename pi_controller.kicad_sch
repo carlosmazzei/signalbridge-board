@@ -5,10 +5,10 @@
 	(uuid "7937d148-dd0e-48a9-9446-42d1f47999d5")
 	(paper "A2")
 	(title_block
-		(title "Raspberry Pi Pico Controller")
-		(date "2023-08-03")
+		(title "PiMax - Raspberry Pi Pico Breakout Board")
+		(date "2025-03-08")
 		(rev "1")
-		(company "Carlos Eduardo de Almeida Mazzei")
+		(company "Carlos Mazzei")
 		(comment 1 "Controller board for common inputs and outputs")
 	)
 	(lib_symbols
@@ -18783,7 +18783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 138.43 74.93 0)
 			(effects
 				(font
@@ -20539,7 +20539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 180.34 270.51 0)
 			(effects
 				(font
@@ -34955,7 +34955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 95.25 85.09 0)
 			(effects
 				(font
@@ -35852,7 +35852,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 168.91 83.82 0)
 			(effects
 				(font
