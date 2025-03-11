@@ -519,7 +519,7 @@
           "group_by": true,
           "label": "Comment",
           "name": "Value",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -537,7 +537,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
