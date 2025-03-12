@@ -308,7 +308,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R9"
-			(at 0 1.397 360)
+			(at 0 1.397 0)
 			(layer "F.SilkS")
 			(uuid "73f4e761-ad34-41b8-a6fe-56b2dea065f9")
 			(effects
@@ -319,7 +319,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at -0.127 -1.524 360)
+			(at -0.127 -1.524 0)
 			(layer "F.Fab")
 			(uuid "5b272140-1e92-4b70-91cf-ead56c085462")
 			(effects
@@ -526,7 +526,7 @@
 			(uuid "b4932ab1-8142-4d91-9991-68cfd965c071")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1f2523c7-ee6b-4402-b821-ac6f7bbbb097")
 			(effects
@@ -863,7 +863,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "d30cd155-5f58-4a52-8ea6-eac6b1cb9151")
 			(effects
@@ -1101,7 +1101,7 @@
 			(uuid "aab74ca9-49e2-42b6-b4dc-0381dd6b5aae")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "86eeccba-7466-4da1-9ec6-d385469c7ac8")
 			(effects
@@ -1150,7 +1150,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN14"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "63098d94-f2f4-4a73-8157-4144e6dbb8cb")
 			(effects
@@ -1161,7 +1161,7 @@
 			)
 		)
 		(property "Value" "AN14"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "a535755e-7a61-4d6d-b6c3-5d51867dd964")
 			(effects
@@ -1440,7 +1440,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "6c829748-90a6-49e8-bf2f-81bbd94271c8")
 			(effects
@@ -1678,7 +1678,7 @@
 			(uuid "e41142c1-c04f-4e61-9a84-c531c10e13da")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "0c74b075-f17e-47cd-988c-854b3540a3cb")
 			(effects
@@ -1727,7 +1727,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R10"
-			(at 0 1.397 360)
+			(at 0 1.397 0)
 			(layer "F.SilkS")
 			(uuid "2085c289-581c-419d-ab68-124133db2913")
 			(effects
@@ -1738,7 +1738,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at -3.3255 0 360)
+			(at -3.3255 0 0)
 			(layer "F.Fab")
 			(uuid "0a2e6c31-8c5a-4656-a8e6-475dde39694f")
 			(effects
@@ -1945,7 +1945,7 @@
 			(uuid "12c6ae07-a10e-49be-8c5a-ae2bf1af1a17")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4128929e-fa7c-406b-a7e7-5f2e829097c8")
 			(effects
@@ -2003,7 +2003,7 @@
 			)
 		)
 		(property "Value" "ROW1"
-			(at 1.016 -2.54 360)
+			(at 1.016 -2.54 0)
 			(layer "F.Fab")
 			(uuid "0f64639d-f59a-4530-87d3-d28ca589d79c")
 			(effects
@@ -2445,7 +2445,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.445 0 360)
+			(at -4.445 0 0)
 			(layer "F.Fab")
 			(uuid "bb8b9589-cb65-4b82-a5a5-74021933a226")
 			(effects
@@ -2683,7 +2683,7 @@
 			(uuid "bd66b026-8fe9-4057-8571-6989a1634071")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "8d735197-302b-4297-8ce9-97d4c4b75ed2")
 			(effects
@@ -2732,7 +2732,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN10"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "67093977-c58d-473e-9f88-f82d9ad7fee9")
 			(effects
@@ -2743,7 +2743,7 @@
 			)
 		)
 		(property "Value" "AN10"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "4ea8c739-47ba-444b-8971-c17a706f9e15")
 			(effects
@@ -3022,7 +3022,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "b4170a6f-f3ed-4f90-a0e6-c0354c784965")
 			(effects
@@ -3260,7 +3260,7 @@
 			(uuid "b0bfe919-5ae4-45ac-b6b7-9bfea67a72ae")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "2b656fdd-11e8-4c7d-bb2f-b2b8b016f331")
 			(effects
@@ -3321,7 +3321,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "423bfc86-954d-4201-84f9-5a9f25e2f1ac")
 			(effects
@@ -3559,7 +3559,7 @@
 			(uuid "51f0334c-bc2a-4298-84f0-e911cda481b7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "1ae93ed6-0663-4b51-915d-b6a043eb2fd1")
 			(effects
@@ -3608,7 +3608,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN8"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "ba33ad35-a24e-4eba-a160-66e80b6f654d")
 			(effects
@@ -3619,7 +3619,7 @@
 			)
 		)
 		(property "Value" "AN8"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "023522d8-7485-4451-a3de-a6a2f0cbc5da")
 			(effects
@@ -3886,7 +3886,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R12"
-			(at 0 1.38121 360)
+			(at 0 1.38121 0)
 			(layer "F.SilkS")
 			(uuid "abac06d6-6d10-4931-b705-d246c12d4580")
 			(effects
@@ -3897,7 +3897,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at -3.429 0 360)
+			(at -3.429 0 0)
 			(layer "F.Fab")
 			(uuid "69fd30f4-8e93-47f0-95a6-4558d44ada4f")
 			(effects
@@ -4104,7 +4104,7 @@
 			(uuid "c8b7d310-ecb9-48df-98e5-ad32ac9674a5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b1206e58-f235-4b2b-ab12-1a1b820ff940")
 			(effects
@@ -4416,7 +4416,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN9"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "17a00769-6e27-40fc-bcf8-0018ed94362b")
 			(effects
@@ -4427,7 +4427,7 @@
 			)
 		)
 		(property "Value" "AN9"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "6a1efbc0-8a00-4f65-abaf-29d210f52812")
 			(effects
@@ -4694,7 +4694,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN5"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "8d93eced-674f-4af0-bd98-abe42a7ffb98")
 			(effects
@@ -4705,7 +4705,7 @@
 			)
 		)
 		(property "Value" "AN5"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "c4fe9cfe-189f-4af1-99a4-4ea25445553c")
 			(effects
@@ -5424,7 +5424,7 @@
 			)
 		)
 		(property "Value" "ROW3"
-			(at 1.27 -2.54 360)
+			(at 1.27 -2.54 0)
 			(layer "F.Fab")
 			(uuid "d7ebee7e-5aa7-4321-b13a-65ff02c5610c")
 			(effects
@@ -5854,7 +5854,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R5"
-			(at 2.6905 0 360)
+			(at 2.6905 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c709c34b-aea6-4039-b608-11596f82e4a0")
@@ -5866,7 +5866,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at -3.1515 0.127 360)
+			(at -3.1515 0.127 0)
 			(layer "F.Fab")
 			(uuid "500b2b03-0218-45f5-a498-5fd9bffb1fc4")
 			(effects
@@ -6073,7 +6073,7 @@
 			(uuid "522f55e5-4a80-4ef3-aae6-0fc118170092")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9c9382ae-3c32-4d0f-b810-98dcfc209783")
 			(effects
@@ -6120,7 +6120,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN1"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "534723b5-325f-4265-8e7b-bc5c7cdd09fc")
 			(effects
@@ -6131,7 +6131,7 @@
 			)
 		)
 		(property "Value" "AN1"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "a4fa6d5b-6996-4501-9c9d-b5c051850795")
 			(effects
@@ -6410,7 +6410,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "ef77e7c0-4aff-4260-a2ac-ada95ac5669c")
 			(effects
@@ -6648,7 +6648,7 @@
 			(uuid "22b42ed6-1766-4e3a-a5b2-62ca89610f21")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "4ed6fdcb-3fac-4dca-9f8c-75192e2776ee")
 			(effects
@@ -6697,7 +6697,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN13"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "b3cea01f-a224-43f3-a69b-afab5bee7c9a")
 			(effects
@@ -6708,7 +6708,7 @@
 			)
 		)
 		(property "Value" "AN13"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "7de390da-2caa-4596-ae6a-93e772989b85")
 			(effects
@@ -6987,7 +6987,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "a5c18dc1-f1d9-4ed1-bdff-17b8b821381f")
 			(effects
@@ -7225,7 +7225,7 @@
 			(uuid "c48ebd29-cf07-4f5e-b020-426f916745e0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "1ea2073f-d91e-40e4-b2fa-dcfd53d37d3a")
 			(effects
@@ -7286,7 +7286,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.572 0 360)
+			(at -4.572 0 0)
 			(layer "F.Fab")
 			(uuid "a41f3c2a-d042-468f-9560-9f7b346f094a")
 			(effects
@@ -7524,7 +7524,7 @@
 			(uuid "dc6c6567-4525-4d2a-ab47-eff9a0132a70")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "9cf7cf71-dc80-46c0-97bb-f902380fc185")
 			(effects
@@ -7709,7 +7709,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN11"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "e55a8d5e-1323-41d0-83c5-1bf12556c4fb")
 			(effects
@@ -7720,7 +7720,7 @@
 			)
 		)
 		(property "Value" "AN11"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "75b11a76-59ea-4890-847b-5ac8623ce294")
 			(effects
@@ -7999,7 +7999,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "aaa258a3-4ba5-4cbe-a665-a0feb6fd74b3")
 			(effects
@@ -8237,7 +8237,7 @@
 			(uuid "d13ea235-138d-463f-a113-5155d8c953f1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "7711b98c-dc07-4c81-818b-ca27fc982f1f")
 			(effects
@@ -8297,7 +8297,7 @@
 			)
 		)
 		(property "Value" "33.2k"
-			(at 4.090844 -0.010627 360)
+			(at 4.090844 -0.010627 0)
 			(layer "F.Fab")
 			(uuid "96563d86-7d65-43ad-81a3-71a4eb5993b9")
 			(effects
@@ -8504,7 +8504,7 @@
 			(uuid "ca1591ad-5f00-41cc-a6b1-7e444eabe55e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "897f38a3-93df-4fcb-b6a4-b4d02ec2424c")
 			(effects
@@ -8563,7 +8563,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "5b8757ec-6611-4792-b87c-ba669814e1a2")
 			(effects
@@ -8801,7 +8801,7 @@
 			(uuid "64f664ea-137b-4cf7-b1f4-7a45efc7ec3c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "dd1de625-b364-44e6-992c-c5bbc0bb7449")
 			(effects
@@ -8862,7 +8862,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "a8924a4a-8bb0-4093-a30c-e4cdc8a4212e")
 			(effects
@@ -9100,7 +9100,7 @@
 			(uuid "c5f3f4ea-00e8-447e-9deb-58e648d29870")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "2380e37f-534d-4b4b-b9f3-9921e5b7e4b4")
 			(effects
@@ -9439,7 +9439,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "43badaa3-7bf2-4503-bd50-fa6f40451b65")
 			(effects
@@ -9677,7 +9677,7 @@
 			(uuid "c3d81c5a-f651-4c79-9325-327cd7a669da")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "28f71675-883d-4981-8f1c-0d73ebbf20c4")
 			(effects
@@ -9726,7 +9726,7 @@
 		(descr "Inductor, Sunlord, MWSA0604S, 7.0x6.6x3.8mm, (https://sunlordinc.com/Download.aspx?file=L1VwbG9hZEZpbGVzL1BERl9DYXQvMjAyMjExMTUxNDQ4MDU0NTQucGRm&lan=en), generated with kicad-footprint-generator gen_inductor.py")
 		(tags "Inductor mwsa")
 		(property "Reference" "L1"
-			(at 0 4.549 360)
+			(at 0 4.549 0)
 			(layer "F.SilkS")
 			(uuid "56103bb5-60ce-4f75-9c99-976ba68a0977")
 			(effects
@@ -9737,7 +9737,7 @@
 			)
 		)
 		(property "Value" "3.3uH"
-			(at 0 4.3 360)
+			(at 0 4.3 0)
 			(layer "F.Fab")
 			(uuid "81282b35-4fbf-4c5e-9d60-ac18a6a60f93")
 			(effects
@@ -9748,7 +9748,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0604S"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c9b60781-2320-4ae3-8ba5-8642732ed600")
@@ -9760,7 +9760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "54ab3dde-313c-4623-b310-f4cf89ae39ec")
@@ -9772,7 +9772,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6351c78f-ad4a-4322-97eb-c45c1e3358a6")
@@ -9981,7 +9981,7 @@
 			(uuid "ea919a44-8364-41a9-bd4f-690c68a381dc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "416fcd01-c303-426e-8075-44f30c1d5150")
 			(effects
@@ -10030,7 +10030,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN3"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "10f87fb8-1937-4dce-a60a-261a1f136fc6")
 			(effects
@@ -10041,7 +10041,7 @@
 			)
 		)
 		(property "Value" "AN3"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "ec00b91d-af24-4dd3-9f12-644eacaa2a0f")
 			(effects
@@ -10308,7 +10308,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN12"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "2109f48b-0520-404d-b682-6d7a0609fc4e")
 			(effects
@@ -10319,7 +10319,7 @@
 			)
 		)
 		(property "Value" "AN12"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "7f9896c3-7c3f-4181-8fc2-6fa4e55eeaa4")
 			(effects
@@ -10598,7 +10598,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "cc4c112d-de35-4886-9013-51ac1754deda")
 			(effects
@@ -10836,7 +10836,7 @@
 			(uuid "5b3bb040-b1d9-4bca-9ed1-692e914763c1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "9ccc5bcc-3c4d-4ab9-ba19-819261f20b5c")
 			(effects
@@ -10897,7 +10897,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "287775b5-8736-48a7-9cfd-d5d04bd3712c")
 			(effects
@@ -11135,7 +11135,7 @@
 			(uuid "7c64342c-9579-472c-87a3-7325d66ff57d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "98de6d59-09e1-4103-b097-5657857c4762")
 			(effects
@@ -11196,7 +11196,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "09bd7f6f-7e6f-45f8-b28b-8fee22fb8e4d")
 			(effects
@@ -11434,7 +11434,7 @@
 			(uuid "be406ff7-50b7-4e8a-8c15-0cf943e5b214")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "91db9caf-ce2d-431a-87b7-444a250ceb05")
 			(effects
@@ -11483,7 +11483,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R3"
-			(at -2.6905 0 360)
+			(at -2.6905 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e03ce61a-5414-4366-ba9a-4d4fcdf2fa55")
@@ -11495,7 +11495,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 3.1515 0 360)
+			(at 3.1515 0 0)
 			(layer "F.Fab")
 			(uuid "9bd105e9-b300-4812-ae35-5bba595a410e")
 			(effects
@@ -11702,7 +11702,7 @@
 			(uuid "ad71eb61-5e8b-4507-b759-df997c9b4949")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "46f992c8-8b59-4cac-97f8-cb1ae4f9eeef")
 			(effects
@@ -11986,7 +11986,7 @@
 			(uuid "8d806991-1d3c-4487-b599-3f0ea6582a0f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "4b769b4f-a21c-4c30-9a1f-9879d847deda")
 			(effects
@@ -12371,7 +12371,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.445 0.254 360)
+			(at -4.445 0.254 0)
 			(layer "F.Fab")
 			(uuid "45b1090c-cc31-4328-8b45-5e5610dee051")
 			(effects
@@ -12609,7 +12609,7 @@
 			(uuid "6554c714-54f0-42f7-9448-42fbfa35b529")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "49af6adf-960f-4dd9-85e5-96c3db7f12fa")
 			(effects
@@ -12670,7 +12670,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "e2fd8457-e748-4c31-a7a6-6ccf32004253")
 			(effects
@@ -12908,7 +12908,7 @@
 			(uuid "0869589c-1f10-4106-a2ec-5a956de058b7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "e8b2d163-ced9-489a-bdb8-4d4c2476bcf0")
 			(effects
@@ -13493,7 +13493,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "eec990f3-6b53-41a4-98f8-d7d23bc75ddb")
 			(effects
@@ -13731,7 +13731,7 @@
 			(uuid "2add10d5-5a7d-4ca3-bf41-05e194563efa")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "3d0b71a6-7206-490f-b7fe-1690ea3f166e")
 			(effects
@@ -13780,7 +13780,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN2"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "4aa09d34-1fcc-49ec-a690-8da3a0cab026")
 			(effects
@@ -13791,7 +13791,7 @@
 			)
 		)
 		(property "Value" "AN2"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "bcf1ad90-e757-4b92-9770-50cb58bfc4a8")
 			(effects
@@ -14070,7 +14070,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "803f8df9-a68b-4ee4-9913-9acd41a1ab87")
 			(effects
@@ -14308,7 +14308,7 @@
 			(uuid "f668e213-dd26-4bb3-9c70-f1c671f8e01b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "10da3f44-7373-43b5-994a-7a38ea12132e")
 			(effects
@@ -14357,7 +14357,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
-			(at 0.0235 1.397 360)
+			(at 0.0235 1.397 0)
 			(layer "F.SilkS")
 			(uuid "be652a7e-dab9-4877-ab08-8b72fd9fd56d")
 			(effects
@@ -14368,7 +14368,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "1d88162b-1300-471c-bb6c-f47a39e2eef8")
 			(effects
@@ -14575,7 +14575,7 @@
 			(uuid "77e5424e-46ee-4752-a7d3-574254dcd3ef")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "63ea3d4c-04cf-4526-8376-ca7883fbaef5")
 			(effects
@@ -14634,7 +14634,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "92ea02e5-1ea2-4f04-9ee3-ad0b7cd92660")
 			(effects
@@ -14872,7 +14872,7 @@
 			(uuid "c0b0d468-1de0-4d73-b765-eef1718abe3e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "3749b874-6f6d-42fd-a299-e7ee36c9ea08")
 			(effects
@@ -14933,7 +14933,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "0fda150f-4232-4240-9942-51131b6adf0e")
 			(effects
@@ -15171,7 +15171,7 @@
 			(uuid "b54a1bd2-90eb-4ce4-9168-538cdfe96adc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "e605915c-9181-4db2-a0aa-7fdae77313d0")
 			(effects
@@ -15716,7 +15716,7 @@
 			(uuid "e9896cb7-cfcd-40c3-8b41-717b5a0ce11c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "a14ee5f5-90e6-403a-93a6-c1ef619ca868")
 			(effects
@@ -15933,7 +15933,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "fe730524-65ef-4b02-9554-a8efebadd377")
 			(effects
@@ -16171,7 +16171,7 @@
 			(uuid "b563a77f-2d15-4a75-97d1-f962e57f6aca")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "37b26b3c-2d94-4251-83f1-1541f56fa11c")
 			(effects
@@ -16220,7 +16220,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN7"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "76de9c60-d0c3-4782-8553-280ab5b82003")
 			(effects
@@ -16231,7 +16231,7 @@
 			)
 		)
 		(property "Value" "AN7"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "1f6ad1b5-2899-45b5-90a1-9a5605d5c42e")
 			(effects
@@ -16509,7 +16509,7 @@
 			)
 		)
 		(property "Value" "ROW4"
-			(at 1.143 -2.54 360)
+			(at 1.143 -2.54 0)
 			(layer "F.Fab")
 			(uuid "046188f7-32e1-45f8-9e25-c931f721045e")
 			(effects
@@ -17352,7 +17352,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "904e4a89-a2c8-411d-acfa-b1b7895548ec")
 			(effects
@@ -17590,7 +17590,7 @@
 			(uuid "55673f80-01e9-4991-9f9b-fc79b37262ab")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "db4fafca-3e5b-4633-afea-6778385b488a")
 			(effects
@@ -17899,7 +17899,7 @@
 		(descr "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSOT TO_SOT_SMD")
 		(property "Reference" "U1"
-			(at -0.003263 -2.531856 360)
+			(at -0.003263 -2.531856 0)
 			(layer "F.SilkS")
 			(uuid "13759c85-0e0d-4ab5-a515-9721b3797b3c")
 			(effects
@@ -17910,7 +17910,7 @@
 			)
 		)
 		(property "Value" "AP62300TWU"
-			(at -4.7045 3.368 360)
+			(at -4.7045 3.368 0)
 			(layer "F.Fab")
 			(uuid "95110a53-768e-445c-b43a-826664b59bff")
 			(effects
@@ -17921,7 +17921,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c120f15b-486c-4ef8-b93a-53e60da32370")
@@ -17933,7 +17933,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP62300_AP62301_AP62300T.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c33c0db2-4bac-427c-8a1d-8ad382bd27a9")
@@ -17945,7 +17945,7 @@
 			)
 		)
 		(property "Description" "3A, 750kHz Buck DC/DC Converter, PFM for light load efficiency, 4.2V-18V input voltage, 0.8V-7V adjustable output voltage, TSOT-23-6"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "09f1f46b-fb1d-48c7-95ec-0bab5b4817c5")
@@ -18117,7 +18117,7 @@
 			(uuid "73a0030e-8ea1-47e6-82d8-21dc7dba0112")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7c4a8f00-12e0-43c3-9769-140b693b9443")
 			(effects
@@ -19308,7 +19308,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "2b6d0374-e222-40d1-b3fa-b3994ab5f0fa")
 			(effects
@@ -19546,7 +19546,7 @@
 			(uuid "5f34c8f9-4e6a-413d-a861-a916d82ee423")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "7bc1f3d0-5883-4a3a-9b70-06bbfed171ba")
 			(effects
@@ -19832,7 +19832,7 @@
 			(uuid "28a80521-e1df-47e6-bb26-fb3d390cfb1b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "31d4c76e-2e7b-4195-b664-3d0a678180ac")
 			(effects
@@ -20049,7 +20049,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "ca5b2e4f-22e8-46f7-8f1f-fb9de5ff6bd0")
 			(effects
@@ -20287,7 +20287,7 @@
 			(uuid "143b4f69-f7a6-4c47-98ac-a52a596b16bc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "ed588da3-15b0-4ce0-b592-caed4f7ea29c")
 			(effects
@@ -20348,7 +20348,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "9f6305f2-ce27-43b7-bd57-2bf1b7431570")
 			(effects
@@ -20586,7 +20586,7 @@
 			(uuid "392d8da0-7203-40c3-8547-fa4fe0918a8c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "b5e0a001-8837-44a2-a06e-d715abe67724")
 			(effects
@@ -20647,7 +20647,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "7a3a4d8a-627f-4e5e-be8d-86e9db310ffe")
 			(effects
@@ -20885,7 +20885,7 @@
 			(uuid "bc18a9f4-4a62-4f43-97d9-786ecf4f8ccd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "7753be7f-4928-433f-b523-1d0f5a531b1f")
 			(effects
@@ -20934,7 +20934,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C12"
-			(at 0 1.143 360)
+			(at 0 1.143 0)
 			(layer "F.SilkS")
 			(uuid "529819da-8198-480c-8782-94fa5a6e0e01")
 			(effects
@@ -20945,7 +20945,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "f89fa4f4-b2fc-4cf1-a9de-dbe7152d7410")
 			(effects
@@ -21132,7 +21132,7 @@
 			(uuid "9f5981b6-38de-480c-81c4-e1470bcb07e6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "a695d435-b3f7-4e0b-8faf-d77ade2654a0")
 			(effects
@@ -21205,7 +21205,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "f09b321d-c677-4ee4-a73b-dc44b215b33c")
 			(effects
@@ -21443,7 +21443,7 @@
 			(uuid "680baee5-6da6-49fa-a9f7-c7326c37d93f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "2b4adacc-c88b-4ec9-bfef-4ce2b0e13573")
 			(effects
@@ -21994,7 +21994,7 @@
 			(uuid "cee6ee38-e066-4e9e-b5bd-8f999ba4b82b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "f855f4aa-395e-419c-9b0a-817c1a74641e")
 			(effects
@@ -22199,7 +22199,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J30"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "0147e87a-74c8-4714-ad84-8738ca96868a")
 			(effects
@@ -22210,7 +22210,7 @@
 			)
 		)
 		(property "Value" "I2C"
-			(at 0 9.95 360)
+			(at 0 9.95 0)
 			(layer "F.Fab")
 			(uuid "a4ec96e1-9ecf-4d9f-a1e3-6a977444559d")
 			(effects
@@ -22500,7 +22500,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.445 0 360)
+			(at -4.445 0 0)
 			(layer "F.Fab")
 			(uuid "e9161ae3-9905-4045-be5d-0a579cc96def")
 			(effects
@@ -22738,7 +22738,7 @@
 			(uuid "bbf0fa81-1e31-4a98-9f1c-bbe044bb9dc4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "4acffb45-0286-474c-9023-70cfe68df666")
 			(effects
@@ -22799,7 +22799,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "de734952-58e2-4c47-bb14-e59e953b3e9d")
 			(effects
@@ -23037,7 +23037,7 @@
 			(uuid "2a16ea29-2e02-4aa7-9e90-a1778d02957c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "e782ba03-5eb0-4a01-98f5-826f63782730")
 			(effects
@@ -23098,7 +23098,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "8ac1ed3d-ba2f-4ff0-9c59-dc10b2b7e91a")
 			(effects
@@ -23336,7 +23336,7 @@
 			(uuid "2defc5eb-a316-4c92-8292-6c41ed014fa8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "8d1d4a5e-eb0f-4f72-9368-cc5fd47f49d5")
 			(effects
@@ -23397,7 +23397,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.572 0 360)
+			(at -4.572 0 0)
 			(layer "F.Fab")
 			(uuid "b15cf4a1-4218-4898-90aa-30ec39905923")
 			(effects
@@ -23635,7 +23635,7 @@
 			(uuid "f0da9aac-d51b-4d07-b934-53b978e6719d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "a243718c-813d-45e4-aac7-fcda844f28f5")
 			(effects
@@ -23696,7 +23696,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "13f6d8e1-aaf0-43d0-b79e-ebf0a8b6300b")
 			(effects
@@ -23934,7 +23934,7 @@
 			(uuid "dbab9cc5-9ca7-4c43-aed1-701b792d4d0f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "9b2a03d1-74d9-41cb-966b-0d5e68f354dd")
 			(effects
@@ -23995,7 +23995,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "5487cd9e-8d11-4717-a9b7-8f31214e1a5f")
 			(effects
@@ -24233,7 +24233,7 @@
 			(uuid "0a7e44f0-188a-4c75-9a17-4f1899c167f8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "d6191769-7728-4db7-9530-1fdb43dc3de4")
 			(effects
@@ -24519,7 +24519,7 @@
 			(uuid "61c2d2b3-c334-455e-9a74-619a087e01ce")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "b89c378f-3ddd-4606-ba4d-368981b6174e")
 			(effects
@@ -24961,7 +24961,7 @@
 			(uuid "234515b3-7deb-49cd-9cfd-8369528cbe80")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "9e6d715a-f299-436b-8867-0b36c63101d9")
 			(effects
@@ -25753,7 +25753,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN16"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "02d9fbf1-9e66-413d-a604-73f542b2f130")
 			(effects
@@ -25764,7 +25764,7 @@
 			)
 		)
 		(property "Value" "AN16"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "ff1ade40-7732-4b67-ac2f-c268269f910e")
 			(effects
@@ -26301,7 +26301,7 @@
 			)
 		)
 		(property "Value" "ROW7"
-			(at 1.27 -4.191 360)
+			(at 1.27 -4.191 0)
 			(layer "F.Fab")
 			(uuid "ab8f1cc4-496b-410b-b2be-6384b419f613")
 			(effects
@@ -26742,7 +26742,7 @@
 			)
 		)
 		(property "Value" "ROW2"
-			(at 1.143 -2.54 360)
+			(at 1.143 -2.54 0)
 			(layer "F.Fab")
 			(uuid "9081919a-6d67-418d-9793-2ca7d9274bdd")
 			(effects
@@ -27184,7 +27184,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "9a520199-357c-4b04-8f60-c688755bad41")
 			(effects
@@ -27422,7 +27422,7 @@
 			(uuid "fba8d2a2-57c4-4dfc-b703-b9a32aaf2dbc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "b4a8fe7c-aa02-48ea-bf47-3fef6158447d")
 			(effects
@@ -27483,7 +27483,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "19d26aaf-2ac9-4c70-994b-e62d96e7d8c3")
 			(effects
@@ -27721,7 +27721,7 @@
 			(uuid "8124142d-0d9a-48c5-a641-6a46807f9a84")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "31c7a8ce-50ea-47b3-8717-3e68d1c7bce8")
 			(effects
@@ -27782,7 +27782,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "1679b2c1-9e2f-4ce8-884f-30d9a4d07c3a")
 			(effects
@@ -28020,7 +28020,7 @@
 			(uuid "07b4b4af-79ad-48f4-baa1-0c26bcac4bb7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "99c8325e-fa16-4526-af38-570b0cc76aa5")
 			(effects
@@ -28069,7 +28069,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R16"
-			(at 0 1.397 360)
+			(at 0 1.397 0)
 			(layer "F.SilkS")
 			(uuid "ae0dfca9-e8ed-405d-9a50-41551c468cb8")
 			(effects
@@ -28080,7 +28080,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3393caf4-02df-44d1-b846-fc09ee42f3bb")
 			(effects
@@ -28287,7 +28287,7 @@
 			(uuid "1c6cd0f3-1f7d-4cda-868a-2a3e9d35f7ee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ff66f20f-459c-4403-ae43-ddaeda7f7dad")
 			(effects
@@ -28346,7 +28346,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "c359cdbe-70bf-4cf5-bf73-59f9a94745a2")
 			(effects
@@ -28584,7 +28584,7 @@
 			(uuid "4f7753e2-1b63-47c9-990b-17b4fd9fe2e7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "78af9f59-857c-44bd-baf7-8e8724d38818")
 			(effects
@@ -28645,7 +28645,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "1a25b814-c61c-4470-8cd4-28a2cf1773f8")
 			(effects
@@ -28883,7 +28883,7 @@
 			(uuid "81780064-7382-436b-ae9a-7520c0f35208")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "b8167c12-0600-49e5-878f-7e584dd8a026")
 			(effects
@@ -28944,7 +28944,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "2d5b6eb3-6cbc-408f-867e-5e7c9bb754df")
 			(effects
@@ -29182,7 +29182,7 @@
 			(uuid "51bb5a67-9204-41ed-a358-223527a996b9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "0476325c-e503-42ce-b530-3242b259c501")
 			(effects
@@ -29243,7 +29243,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "78956387-c8c7-445a-8788-c33c7295c662")
 			(effects
@@ -29481,7 +29481,7 @@
 			(uuid "f7693b85-841d-4ee0-8b68-fa01cdc0bbab")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "b43bd31e-9305-429d-b4f5-00dc0c46c8fb")
 			(effects
@@ -29767,7 +29767,7 @@
 			(uuid "523f9a37-a3ca-4820-bcb1-4c5f9750bb83")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "6cfb5da2-e3ca-42a1-a045-8b3a9ee1f576")
 			(effects
@@ -30127,7 +30127,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R13"
-			(at 0 1.397 360)
+			(at 0 1.397 0)
 			(layer "F.SilkS")
 			(uuid "dd456423-e73e-4ab6-b36e-ebc24cdca2e4")
 			(effects
@@ -30138,7 +30138,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "5d26d2e6-403c-4a43-a629-73ab2655bbc7")
 			(effects
@@ -30345,7 +30345,7 @@
 			(uuid "02702397-5afb-4453-95cf-7b9b4e49f444")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9ecc35be-1fbc-4fc8-ae1c-f019e46fffe2")
 			(effects
@@ -30404,7 +30404,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "039d8f47-c514-41a9-a024-94bc98cc787f")
 			(effects
@@ -30642,7 +30642,7 @@
 			(uuid "0b266853-c91d-464a-91ca-1967ecb75c80")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "eb9e51c6-db90-4a1a-8213-e93584f65edf")
 			(effects
@@ -30928,7 +30928,7 @@
 			(uuid "69eca021-7035-43f3-b23a-4b845054cce3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "80a7324f-3dfb-4430-8255-6decd278adee")
 			(effects
@@ -31370,7 +31370,7 @@
 			(uuid "b08e2388-e1e5-4cee-89e6-8e005adb128e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "8913b92a-5467-4a05-b060-50cfc802b512")
 			(effects
@@ -31465,7 +31465,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R14"
-			(at 0 1.397 360)
+			(at 0 1.397 0)
 			(layer "F.SilkS")
 			(uuid "efc55ce3-5bc2-41c5-83cd-348ebbd07007")
 			(effects
@@ -31476,7 +31476,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "29bfa4ad-78e9-4a05-8597-667881252601")
 			(effects
@@ -31683,7 +31683,7 @@
 			(uuid "3f26cd6b-fff7-438d-8d16-8b470d84028b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "211b6a8e-3472-475b-8f91-dafbc7dbe864")
 			(effects
@@ -31730,7 +31730,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN4"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "dd36e99a-b809-4e78-87e7-99b3622cfee3")
 			(effects
@@ -31741,7 +31741,7 @@
 			)
 		)
 		(property "Value" "AN4"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "e81be8c4-b18b-42f1-ab3c-8c51082c2796")
 			(effects
@@ -32020,7 +32020,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "9a4ec418-33f2-4dfd-8939-d775137b7ee7")
 			(effects
@@ -32258,7 +32258,7 @@
 			(uuid "51738343-162d-465d-8b92-ae0aa5e7b44c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "d54f47fc-b4ea-457b-a410-8e22ab9a9205")
 			(effects
@@ -32544,7 +32544,7 @@
 			(uuid "c29a8ed8-25b3-431e-a74a-6ca24a63dfb6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "ce3681d5-cf09-41cb-9edc-d0c7bb404bd6")
 			(effects
@@ -32986,7 +32986,7 @@
 			(uuid "87d9868a-0824-4d1b-9b72-8e4eb5e1ee3f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 8.89 360)
+			(at 1.27 8.89 0)
 			(layer "F.Fab")
 			(uuid "a90ebce7-762b-4615-8f79-6be060b6416d")
 			(effects
@@ -33203,7 +33203,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "bb94538a-738c-48ce-b845-6123b71af97b")
 			(effects
@@ -33441,7 +33441,7 @@
 			(uuid "d17fffb4-0c1a-490c-98d6-a84dc01a82c1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "669e2128-7769-4e15-94d0-bfff1f14ff39")
 			(effects
@@ -33502,7 +33502,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "9a6d4e25-389a-4d75-a012-1726b28219a7")
 			(effects
@@ -33740,7 +33740,7 @@
 			(uuid "e22198ef-77c0-44fb-a425-8c0a902c9bf3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "2e6c90a9-f989-4b9c-9fbf-23ba6a611f0c")
 			(effects
@@ -34582,7 +34582,7 @@
 			(uuid "8da4e612-a573-4de7-9626-ebd5bace6c9f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.54 360)
+			(at 0 2.54 0)
 			(layer "F.Fab")
 			(uuid "3d231927-80f5-4736-9cea-332e3e7814b2")
 			(effects
@@ -36206,7 +36206,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "beb0d045-312c-47be-900a-876add27ce1b")
 			(effects
@@ -36444,7 +36444,7 @@
 			(uuid "d1d6e36e-9639-47b1-bb2c-93b6a4ed5ab5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "80338d49-22de-4d0e-a73e-3d9ad8a1ec42")
 			(effects
@@ -36505,7 +36505,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.572 0 360)
+			(at -4.572 0 0)
 			(layer "F.Fab")
 			(uuid "242ee7ec-a948-4109-9401-26cb7f09781b")
 			(effects
@@ -36743,7 +36743,7 @@
 			(uuid "516e7281-90dc-4658-adcf-a273989af2a6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "b882580d-06e3-4d06-8059-2f39aff48ae4")
 			(effects
@@ -36804,7 +36804,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "d162fe24-8805-47cb-834a-ee449a5fa6e3")
 			(effects
@@ -37042,7 +37042,7 @@
 			(uuid "e1a21f3c-25ee-424e-afa2-96f40f06923c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "3d950d04-fbd8-4af8-92cc-ba2e69155216")
 			(effects
@@ -38370,7 +38370,7 @@
 		(descr "SOP, 24 Pin (http://www.issi.com/WW/pdf/31FL3218.pdf#page=14), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOP SO")
 		(property "Reference" "U6"
-			(at 0 -8.65 360)
+			(at 0 -8.65 0)
 			(layer "F.SilkS")
 			(uuid "ffa2d3c8-8d10-4429-8900-3cec0e576bd4")
 			(effects
@@ -38381,7 +38381,7 @@
 			)
 		)
 		(property "Value" "TM1639 (TA2009B)"
-			(at 0 8.65 360)
+			(at 0 8.65 0)
 			(layer "F.Fab")
 			(uuid "40d6fa81-e208-4274-aee5-a29391b29ef8")
 			(effects
@@ -38392,7 +38392,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOP-24_7.5x15.4mm_P1.27mm"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a5816888-f612-47f5-a4dc-3dafd813a4fa")
@@ -38404,7 +38404,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.titanmec.com/product/display-drivers/led-panel-display-driver-chip/2022081798.html"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cd29c96e-ce63-445d-ac1d-e828ed249cdb")
@@ -38416,7 +38416,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fbd54191-11e1-45a3-8ce7-74bc4c493796")
@@ -38627,7 +38627,7 @@
 			(uuid "56e53674-1cf5-4164-8c01-c277a25e2337")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "527e37a6-1895-494d-a190-0caafe4ff1a9")
 			(effects
@@ -38908,7 +38908,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "20c9728c-eb27-4d7f-8f82-1794751e73ec")
 			(effects
@@ -39146,7 +39146,7 @@
 			(uuid "a0f0b4a1-30e7-4280-884b-d9511c6e4e86")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "2b6610f5-308f-4ff3-acf4-c9f9339a6cff")
 			(effects
@@ -39195,7 +39195,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R17"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e882d231-b34e-47a6-a9bb-c3e36c9989b0")
@@ -39207,7 +39207,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3240cb7b-af78-4b9e-a13a-7e5f0f724b4d")
 			(effects
@@ -39414,7 +39414,7 @@
 			(uuid "933389ed-b5f9-434a-9c9a-4dd250a7e592")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "04089d2d-cdd4-40a5-b034-5bda767d2b56")
 			(effects
@@ -39461,7 +39461,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J31"
-			(at -0.127 10.16 360)
+			(at -0.127 10.16 0)
 			(layer "F.SilkS")
 			(uuid "cf5d7cbd-fa22-48bb-82c8-3eb3c085b43d")
 			(effects
@@ -39472,7 +39472,7 @@
 			)
 		)
 		(property "Value" "UART"
-			(at 0 9.95 360)
+			(at 0 9.95 0)
 			(layer "F.Fab")
 			(uuid "4f5a31be-28de-4e96-bd1d-e753ae620b8a")
 			(effects
@@ -39762,7 +39762,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "b5318b4f-2c40-4743-b661-a98a787a8cd2")
 			(effects
@@ -40000,7 +40000,7 @@
 			(uuid "ea581096-204e-4960-ae48-c364b3d4bb90")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "fd20e9f4-6d5f-4f83-897d-d324827b24e4")
 			(effects
@@ -40061,7 +40061,7 @@
 			)
 		)
 		(property "Value" "470nF"
-			(at -3.963844 0.032157 360)
+			(at -3.963844 0.032157 0)
 			(layer "F.Fab")
 			(uuid "564a6afa-17a1-4a37-b1d9-2d14272a476a")
 			(effects
@@ -40281,7 +40281,7 @@
 			(uuid "ee3a4b6f-a0ff-46b8-9036-61db8c2116c7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9b4d3deb-db34-41a6-b18e-7636366b524c")
 			(effects
@@ -40340,7 +40340,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "7e17f54b-0fd2-4676-a29e-3194474b8149")
 			(effects
@@ -40578,7 +40578,7 @@
 			(uuid "f0d34f7f-cf69-4dde-82dd-33a6806655a6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "97f97df6-345c-4c2a-b9e0-174ca4277bac")
 			(effects
@@ -40627,7 +40627,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN15"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "54e2c290-bca2-40b5-b204-93fa4d65249b")
 			(effects
@@ -40638,7 +40638,7 @@
 			)
 		)
 		(property "Value" "AN15"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "6b5de1e4-1043-46db-b373-c8f016ef8ba0")
 			(effects
@@ -41453,7 +41453,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "12840c0c-0795-4297-87e0-6b537de1610e")
 			(effects
@@ -41691,7 +41691,7 @@
 			(uuid "1c65d91a-9b8b-45b1-af67-c1317fde512c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "5e7f05cb-550d-4625-8504-48d5eb727433")
 			(effects
@@ -41752,7 +41752,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.572 0 360)
+			(at -4.572 0 0)
 			(layer "F.Fab")
 			(uuid "696e90a3-5851-4527-a013-593d999574f4")
 			(effects
@@ -41990,7 +41990,7 @@
 			(uuid "649c772c-bd98-4b2a-8399-a32216c6d2d9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "a4f1fbb9-c536-498b-b547-4780dda1a323")
 			(effects
@@ -42051,7 +42051,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "a867cbd5-1ab8-4763-8b81-4171fa7333db")
 			(effects
@@ -42289,7 +42289,7 @@
 			(uuid "bf69d987-4952-41d2-ae60-5c119dc09f4d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "d949a619-55ce-4167-8e39-8cdcc5dd4c2d")
 			(effects
@@ -42350,7 +42350,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "6d7712d1-7d3e-4160-b964-b245e61eac99")
 			(effects
@@ -42588,7 +42588,7 @@
 			(uuid "3211e0d1-45e9-4da5-8b91-8cf15f554cfc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "34263d22-77db-40c0-a2e9-419d5a4cf17d")
 			(effects
@@ -42649,7 +42649,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at -4.572 0 360)
+			(at -4.572 0 0)
 			(layer "F.Fab")
 			(uuid "68521384-089b-46dd-8cde-6064d5f9f13c")
 			(effects
@@ -42887,7 +42887,7 @@
 			(uuid "e5271294-7063-4148-97c5-c617f241c98c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "db6d7ade-8109-4c9f-b591-8e231976f027")
 			(effects
@@ -43213,7 +43213,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "0ac5d732-5663-4e61-bd6d-503b0b520fa1")
 			(effects
@@ -43451,7 +43451,7 @@
 			(uuid "1dceac45-8656-4a38-92a7-25d87bdd3302")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "c4864184-38e6-46d9-95d8-dfd7540d2319")
 			(effects
@@ -43737,7 +43737,7 @@
 			(uuid "6ec4b0af-f887-4773-93be-69c16ca19f8e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "b4a98361-4a25-4489-b147-1e0efee122f2")
 			(effects
@@ -43844,7 +43844,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "af0eb231-eeb9-4ab5-a651-169e87c31493")
 			(effects
@@ -44082,7 +44082,7 @@
 			(uuid "4bdfc5ca-6b2e-46f4-986f-751b22e02d09")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "7e671549-3299-47c7-8d55-e1313fe3604f")
 			(effects
@@ -44131,7 +44131,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U7"
-			(at 0 5.969 360)
+			(at 0 5.969 0)
 			(layer "F.SilkS")
 			(uuid "16537a51-c995-427e-bc5f-2a13feffb5ad")
 			(effects
@@ -44142,7 +44142,7 @@
 			)
 		)
 		(property "Value" "74HC138"
-			(at 0 5.9 360)
+			(at 0 5.9 0)
 			(layer "F.Fab")
 			(uuid "975181ab-5188-4c4b-a7c2-2c166d526c11")
 			(effects
@@ -44153,7 +44153,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bf6e5972-1773-4ae5-9bae-5d769c5f0fd1")
@@ -44165,7 +44165,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd74hc238.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "54cb05a9-842e-44a5-941a-692608d29deb")
@@ -44177,7 +44177,7 @@
 			)
 		)
 		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dad471df-88b8-45ec-821c-f0144f74f534")
@@ -44349,7 +44349,7 @@
 			(uuid "4f5e58c5-9e9b-4fd9-8aef-628e20a1b729")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4a3d05a0-3abf-4999-ad8d-9fe3a285ce44")
 			(effects
@@ -44538,7 +44538,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C7"
-			(at -0.3285 1.081011 360)
+			(at -0.3285 1.081011 0)
 			(layer "F.SilkS")
 			(uuid "9123c1b9-daf9-4b8c-b8ad-e6c69c0ca04c")
 			(effects
@@ -44549,7 +44549,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 0.1785 1.143 360)
+			(at 0.1785 1.143 0)
 			(layer "F.Fab")
 			(uuid "1b1d7dae-315b-4eae-9ccf-e4a7e1f318af")
 			(effects
@@ -44736,7 +44736,7 @@
 			(uuid "8480bb8b-eeb5-4b3c-ab60-34595b9aeb28")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "2085ab30-9489-480f-a188-cc4c932164f9")
 			(effects
@@ -44808,7 +44808,7 @@
 			)
 		)
 		(property "Value" "ROW5"
-			(at 1.143 -3.683 360)
+			(at 1.143 -3.683 0)
 			(layer "F.Fab")
 			(uuid "6beef227-1ecb-4c3b-87f1-3774b8a9d189")
 			(effects
@@ -45250,7 +45250,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "8501ba10-2097-4b87-adcb-aaeb99885727")
 			(effects
@@ -45488,7 +45488,7 @@
 			(uuid "c390bd58-2ae3-404c-818b-b04d1bd691af")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "864f6b79-f9c5-4ebf-93d1-3d21b5024044")
 			(effects
@@ -45549,7 +45549,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "bbd30edf-ba92-404a-b506-869b8c32621d")
 			(effects
@@ -45787,7 +45787,7 @@
 			(uuid "8484a20f-a533-4782-b3ca-11b66db0a05c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "17d622ea-a5f8-46e4-8948-65f4df782d5c")
 			(effects
@@ -46107,7 +46107,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "87609ffa-af59-4972-b4c7-6ecea3aaf8c7")
 			(effects
@@ -46345,7 +46345,7 @@
 			(uuid "48d8b1bb-7735-4174-901d-8e3500964392")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "9493c980-600b-4033-bb1b-ad938a647028")
 			(effects
@@ -46631,7 +46631,7 @@
 			(uuid "2590e837-40c9-43bc-891d-53a40782d4dd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "15f58ce3-c160-47c0-92c3-c1122ec36f5c")
 			(effects
@@ -46726,7 +46726,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R15"
-			(at 0.0235 1.524 360)
+			(at 0.0235 1.524 0)
 			(layer "F.SilkS")
 			(uuid "26b534f1-5bc4-4015-a035-be8bd90d4fc5")
 			(effects
@@ -46737,7 +46737,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "15a1097b-303e-4153-8fad-c188f27c9c0f")
 			(effects
@@ -46944,7 +46944,7 @@
 			(uuid "8ae79764-68a7-4ab7-9c7f-262c74b24dda")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "87139f1b-cbc9-4828-968f-1e0f3a7709cb")
 			(effects
@@ -47003,7 +47003,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "07fbc9de-64fa-4755-90bd-e9c761e9be28")
 			(effects
@@ -47241,7 +47241,7 @@
 			(uuid "b3489900-bdff-42ca-95e4-1d4e15dec8ae")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "275b7369-dbfd-40fc-8dc1-e7d68d935706")
 			(effects
@@ -47290,7 +47290,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C13"
-			(at 0 -1.05 360)
+			(at 0 -1.05 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fa618f2d-3199-4ef6-b17b-a2f828cdb76a")
@@ -47302,7 +47302,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "9681d0b1-3a74-439a-a44a-575fc4da3a1b")
 			(effects
@@ -47489,7 +47489,7 @@
 			(uuid "9a7bb879-7b2c-4c2d-8ea5-a7c7eedcde9a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "95a33521-ebe2-408c-8923-1786d25bb74c")
 			(effects
@@ -47562,7 +47562,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "1c842cba-be98-45a0-b3ab-5dd2c81b4051")
 			(effects
@@ -47800,7 +47800,7 @@
 			(uuid "47a0dde8-179b-41e1-8c4a-b8ed2274973b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "bc490dd1-7db5-43c9-bb8d-8603c2ee531d")
 			(effects
@@ -47861,7 +47861,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "b66b639a-c2fb-4653-8759-e22491a247ae")
 			(effects
@@ -48099,7 +48099,7 @@
 			(uuid "eda0a139-9af2-4977-9b91-25935fc61b4f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "f5732538-4772-4fdc-9b50-5dbf2dce4df2")
 			(effects
@@ -48385,7 +48385,7 @@
 			(uuid "b310fb85-946a-40ae-9a83-71fbd4862e20")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "ac95961a-f5e8-4412-8bab-8102d0f5656e")
 			(effects
@@ -48480,7 +48480,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "AN6"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "867b0495-de62-4d3c-a09e-10708508d8dc")
 			(effects
@@ -48491,7 +48491,7 @@
 			)
 		)
 		(property "Value" "AN6"
-			(at 0 7.41 360)
+			(at 0 7.41 0)
 			(layer "F.Fab")
 			(uuid "4ea0424c-1443-4353-834c-a8016e85036f")
 			(effects
@@ -48995,7 +48995,7 @@
 			(uuid "61fd67fb-c886-4a5b-a561-bf2e3ee97fb3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 2.54 360)
+			(at 1.27 2.54 0)
 			(layer "F.Fab")
 			(uuid "5c13dd5b-e636-49c0-bb1a-851caaa65526")
 			(effects
