@@ -634,7 +634,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "JLCPCB Part #"
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
