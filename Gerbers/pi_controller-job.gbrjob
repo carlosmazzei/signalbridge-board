@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-03-09T11:30:46-03:00"
+    "CreationDate": "2025-03-14T22:40:08-03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -29,7 +29,9 @@
       "PadToPad": 0.15,
       "PadToTrack": 0.15,
       "TrackToTrack": 0.15,
-      "MinLineWidth": 0.25
+      "MinLineWidth": 0.25,
+      "TrackToRegion": 0.15,
+      "RegionToRegion": 0.15
     },
     {
       "Layers": "Inner",
@@ -42,57 +44,57 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "pi_controller-F_Cu.gbr",
+      "Path": "pi_controller-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-In1_Cu.gbr",
+      "Path": "pi_controller-In1_Cu.g2",
       "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-In2_Cu.gbr",
+      "Path": "pi_controller-In2_Cu.g3",
       "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-B_Cu.gbr",
+      "Path": "pi_controller-B_Cu.gbl",
       "FileFunction": "Copper,L4,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-F_Paste.gbr",
+      "Path": "pi_controller-F_Paste.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-B_Paste.gbr",
+      "Path": "pi_controller-B_Paste.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-F_Silkscreen.gbr",
+      "Path": "pi_controller-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-B_Silkscreen.gbr",
+      "Path": "pi_controller-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pi_controller-F_Mask.gbr",
+      "Path": "pi_controller-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "pi_controller-B_Mask.gbr",
+      "Path": "pi_controller-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "pi_controller-Edge_Cuts.gbr",
+      "Path": "pi_controller-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
