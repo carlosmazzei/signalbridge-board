@@ -27,7 +27,7 @@
 "R6","47R","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1","C23182","0603","100mW","1%","","","",""
 "R7,R8,R17","2.2k","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","3","C4190","0603","100mW","1%","","","",""
 "R9,R10,R11,R12,R13,R14,R15,R16","3.3k","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","8","C22978","0603","100mW","1%","","","",""
-"R18","10R","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1","C873673","0603","100mW","1%","","","",""
+"R18","10R","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1","C22859","0603","100mW","1%","","","",""
 "TP1,TP2,TP3,TP4","TestPoint","TestPoint:TestPoint_Pad_D4.0mm","4","","","","","","","",""
 "U1","AP62300TWU","Package_TO_SOT_SMD:TSOT-23-6","1","C1883519","","","","","","",""
 "U2","CD74HC4067SM96","Package_SO:SSOP-24_5.3x8.2mm_P0.65mm","1","C98457","","","","","","",""

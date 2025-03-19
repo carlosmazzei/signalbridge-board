@@ -5010,7 +5010,7 @@
 			)
 		)
 		(property "Value" "330R"
-			(at -3.451277 2.481689 90)
+			(at 0.3892 1.3716 90)
 			(layer "F.Fab")
 			(uuid "2fcbc5b7-1b67-401f-bf01-8cd48c054598")
 			(effects
