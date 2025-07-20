@@ -1,51 +1,327 @@
-# Pico Controller
+<div align="center">
+<img src="https://github.com/carlosmazzei/signalbridge-controller/blob/main/assets/logo-pimatrix-dark.png#gh-dark-mode-only" alt="Signalbridge" width="150">
+<img src="https://github.com/carlosmazzei/signalbridge-controller/blob/main/assets/logo-pimatrix-light.png#gh-light-mode-only" alt="Signalbridge" width="150">
+</div>
 
-## 1. Board Size Estimation  
+# Signalbridge
 
-To accommodate the Raspberry Pi Pico module and all peripherals, the PCB should be at least as large as the Pico itself (roughly **51 × 21 mm** ([Pico H/Pico W Development Boards - Raspberry Pi | DigiKey](https://www.digikey.com/en/product-highlight/r/raspberry-pi/pico-h-and-pico-w-development-boards#:~:text=%2A%2040,11n))). In practice, additional space is required for the LED driver ICs, RS-485 transceiver, voltage regulator (and its inductor or heat-sinking area), ADC multiplexer, key matrix connectors, and other I/O connectors. Placing these components around the Pico in a compact layout (with minimal empty space) suggests a board on the order of **70–80 mm × 50–60 mm** as a starting point. (For example, one Pico breakout board with battery circuitry measured about **70 × 55 mm** ([Raspberry Pi Pico Breakout - Share Project - PCBWay](https://www.pcbway.com/project/shareproject/Raspberry_Pi_Pico_Breakout_1.html#:~:text=Dimensions%3A)).) This size allows a **compact yet manufacturable** design – there is enough room to route traces and place vias without violating minimum spacing rules ([PCB Routing: Best Practices for Optimized Signal Flow - Arshon Inc. Blog](https://arshon.com/blog/pcb-routing-best-practices-for-optimized-signal-flow/#:~:text=Design%20rules%20ensure%20manufacturability%20and,shorts%2C%20opens%2C%20or%20signal%20degradation)). Key components should be arranged logically: for instance, place the Pico at the center or one side, with LED driver chips and their connectors grouped together, and the RS-485 transceiver near its connector. Grouping related components and connectors this way minimizes trace lengths and crossing, simplifying routing ([PCB Routing: Best Practices for Optimized Signal Flow - Arshon Inc. Blog](https://arshon.com/blog/pcb-routing-best-practices-for-optimized-signal-flow/#:~:text=Routing%20begins%20with%20a%20well,minimize%20trace%20lengths%20and%20crossings)). Adequate clearance should be left between components for assembly and for routing **wider traces** where needed (e.g. for power and LED lines). Also include mounting holes or keep-out areas if the board will be secured to an enclosure. Overall, an estimate of around **75 mm ×  Fifty mm** (approximately) provides enough area to fit all components and maintain standard design rules for trace width/spacing, via diameters, and component clearances. This ensures the board is dense but still **easy to manufacture** (meeting typical PCB fab capabilities for a 4-layer board).  
+**A comprehensive, industrial-grade breakout board for the Raspberry Pi Pico with advanced I/O expansion and control capabilities.**
 
-## 2. Recommended 4-Layer PCB Stack-Up
+![Board Image](assets/signalbridge-top.png)
+![Board Image](assets/signalbridge-bottom.png)
 
-Using a 4-layer stack-up will help manage the mixed-signal design (high-speed digital, analog, and power) by dedicating entire layers to power and ground. A well-planned stack-up with solid reference planes improves signal integrity and reduces noise ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,and%20minimizes%20noise)). We suggest the following layer arrangement (from top to bottom):
+## 🚀 Overview
 
-- **Layer 1 – Top Layer (Signal):** Place most components on this layer (including the Pico and critical ICs) and route **high-speed and control signals** here. This includes signals like SPI, I²C, PWM outputs, ADC inputs, and the RS-485 lines (differential pair) from the transceiver. Keeping these on the top layer allows direct, short connections between the Pico and peripherals, and each trace will have the **ground plane immediately below** as a reference. High-speed traces routed on Layer 1 with an uninterrupted ground plane on Layer 2 will have controlled impedance and minimal loop area for return currents, which **improves signal integrity** and reduces EMI. Sensitive signals (e.g. ADC lines) can also be on the top layer so they’re directly above the ground plane (shielding them from noise coupled from other layers). Component placement on top should facilitate short routes – for example, place the RS-485 transceiver and connector close together and near the Pico’s UART pins to keep that differential pair short. Similarly, cluster the LED driver near the Pico’s SPI/I²C or PWM pins (whichever interface it uses) to **minimize interconnect length** ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,signal%20layer%20arrangement%20in%20a)).  
+Signalbridge is a feature-rich breakout board designed to unlock the full potential of the Raspberry Pi Pico microcontroller. This board transforms the Pico into a powerful controller suitable for industrial automation, IoT projects, robotics, and educational applications.
 
-- **Layer 2 – Inner Plane 1 (Ground Plane):** Dedicate the entire second layer to a **solid ground plane**. This plane should span the whole board area under all components. It provides a continuous **low-impedance return path** for signals on the adjacent layers, critical for reducing noise and crosstalk. Every high-speed or sensitive trace on Layer 1 will reference this ground plane, maintaining consistent impedance and reducing the chance of signal distortion or ringing. The ground plane also isolates Layer 1 and Layer 3 from each other electromagnetically, acting as a shield. All ground pins of components (Pico GND pins, driver IC grounds, connector grounds, etc.) should via directly to this plane for the shortest return paths. A single, unified ground plane helps avoid ground loops and keeps the reference uniform for analog and digital sections. If there is a concern about analog ground vs digital ground, one strategy is to use a single ground plane (simpler for a small board) but route the ADC analog inputs in a way that avoids sharing return paths with noisy digital currents (the solid plane and proper decoupling will usually suffice for isolation in this scenario). Overall, Layer 2 being ground ensures **low-noise operation** and forms the reference for controlled impedance routing ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,and%20minimizes%20noise)). It’s also beneficial for EMC and signal integrity, as a continuous ground significantly **reduces EMI and crosstalk** by containing return currents directly underneath signal traces.  
+> [!TIP]
+> This firmware is designed for the Raspberry Pi Pico.
 
-- **Layer 3 – Inner Plane 2 (Power Plane):** Use the third layer as a dedicated **power distribution plane** for the board’s supply rails (e.g. 3.3 V and 9 V). This can be split or partitioned into regions for each voltage. For example, a large pour or plane area for 3.3 V (which powers the Pico and digital ICs) and a separate pour for the incoming 9 V (used by the voltage regulator and possibly fed to LED drivers or other circuits). Having a solid power plane of copper for these rails provides high current capacity and minimizes IR drop across the board. By placing the power plane adjacent to the ground plane (Layer 2), we also form a natural decoupling capacitance between power and ground – this **helps stabilize the supply** and shunts high-frequency noise ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,and%20minimizes%20noise)). The adjacency of power and ground planes means lower loop inductance for power delivery and better high-frequency filtering of transients. **3.3 V** can occupy most of Layer 3 (since it feeds many components), and **9 V** can be a region just around the input and regulator section. Ensure the two regions are well-separated with a sufficient gap to avoid any risk of shorting between 9 V and 3.3 V planes. Important power feeds (like from the 9 V input connector to the regulator, and from the regulator output to the 3.3 V plane) should use this plane for distribution rather than long traces. The plane also helps with **thermal performance** – it spreads heat from power components (e.g. the linear regulator or switching regulator) across the board. If the regulator is a switching type, the switching node itself should *not* be a large plane (to avoid radiating noise), but the input and output can connect to planes for stable input and output rails. Overall, Layer 3 being a dedicated power plane ensures **low impedance power distribution**, reduced voltage drop, and improved decoupling for the 3.3 V supply.  
+Related repos:
 
-- **Layer 4 – Bottom Layer (Signal & Ground Pour):** Use the bottom layer for secondary routing of signals that are less critical or that didn’t fit on the top. For example, low-speed control lines, the key matrix row/column wires, and possibly some of the Pico’s GPIO lines that aren’t timing-critical can be routed on the bottom. If the SPI or I²C bus lines couldn’t all be routed cleanly on top, their longer segments could go on bottom – but try to keep high-speed buses mostly on top to minimize vias. The bottom layer can also carry some analog sensor traces if needed (ensuring they are short and away from noisy signals). After routing the necessary traces on Layer 4, pour copper on the remaining free areas and tie that copper to ground. This **bottom-side ground pour** (stitched with vias to the main ground plane) creates a second reference and additional shielding. It’s especially helpful around the edges of the board and around clusters of signals to further suppress EMI. The ground pour on bottom also provides a return path for any bottom-layer traces (though ideally most returns still go through the solid Layer 2). By having a ground fill on the bottom, we effectively create a **coplanar waveguide** environment for any signals there (with ground on either side/beneath), which helps maintain signal integrity for those lower-priority traces. In summary, Layer 4 serves as a **secondary routing layer** for any signals that can’t be routed on top, and the rest of it should be flooded with ground copper. This approach reduces the number of signal vias needed and keeps the layout flexible, while still providing robust ground referencing.  
+- [Signalbridge breakout board](https://github.com/carlosmazzei/signalbridge-board) (This repo)
+- [Signalbridge test suite](https://github.com/carlosmazzei/signalbridge-test-suite)
+- [Signalbridge firmware](https://github.com/carlosmazzei/signalbridge-controller)
 
-**Note on Stack-Up:** The proposed stack (Signal – GND – Power – Signal) is a common 4-layer configuration that balances routing flexibility with integrity. It dedicates one inner layer fully to ground and one to power, which is excellent for **power integrity** and shielding ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,and%20minimizes%20noise)). Alternatives exist (for instance, using both inner layers as split ground/power or even both as ground for ultra-high-speed designs), but the above is optimal here given we have two main supply rails and numerous signals. The board manufacturer’s standard 4-layer stack-up (dielectric thicknesses between layers) should be used to ensure known impedance for critical traces (if needed, microstrip impedance for Layer 1 can be calculated knowing the Layer 2 spacing). Typically, FR-4 prepreg separates Layer 1–2 and Layer 3–4 by ~0.2 mm, and a thicker core separates Layer 2–3 (exact values depend on the fab’s buildup). This yields a controlled impedance environment for Layer 1 and Layer 4 traces referencing the ground plane.  
+### Key Highlights
 
-## 3. Routing Strategy
+- **Wide Input Voltage Range**: 4.2V to 18V DC input with efficient 3.3V/3A regulation
+- **16-Channel Analog Inputs**: Expandable analog reading capability through integrated multiplexer
+- **8×8 Keypad Matrix**: Professional keypad interface with ESD protection
+- **Multiple Communication Interfaces**: I2C, UART, and 8 SPI outputs
+- **LED Display Controller**: TM1639 for driving 7-segment displays and LED matrices
+- **PWM Output**: Dedicated PWM output with 3-pin connector
+- **User LED**: Power-on indicator LED
+- **Mounting**: 4× mounting holes for secure installation
+- **Comprehensive Protection**: ESD protection on all external interfaces
+- **Professional Grade**: Designed for reliability and expandability
 
-A careful routing strategy is key to achieving signal integrity and low noise on this mixed-signal board. Here are the main guidelines, layer by layer and by signal type:
+## ✨ Features
 
-- **High-Speed and Timing-Critical Signals:** Keep **trace lengths as short as possible** for signals like SPI, I²C, and PWM outputs, as well as the RS-485 differential pair. Shorter traces have lower parasitic inductance and capacitance, reducing the chance of signal degradation, reflections, or delays ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,signal%20layer%20arrangement%20in%20a)) ([PCB Routing: Best Practices for Optimized Signal Flow - Arshon Inc. Blog](https://arshon.com/blog/pcb-routing-best-practices-for-optimized-signal-flow/#:~:text=3)). For example, route the SPI bus lines directly from the Pico to the LED driver ICs with minimal detours. If the Pico communicates with the LED drivers or ADC via SPI/I²C, those lines should ideally be just a few centimeters or less. Place termination or series resistors close to the source (Pico) if needed for signal integrity (often SPI lines don’t need termination at Pico’s speeds, but RS-485 definitely needs a termination resistor at the transceiver/connector end per RS-485 standards). For the **RS-485 interface**, route the A/B differential pair together as a parallel pair from the transceiver to the RS-485 connector (or terminal block). Maintain consistent spacing between the two traces and avoid stubs – treat it as a differential pair, even on a short run, to preserve impedance and reduce noise pickup. It’s good practice to match the lengths of the A and B lines and route them symmetrically to avoid skew, though over a short distance on the PCB this is usually minor. Keeping high-speed signals short and direct, and referencing the ground plane, will **minimize ringing and crosstalk**. Also avoid sharp 90° turns in these traces; use gentle curves or 45° bends to maintain uniform impedance.  
+### 🔌 Power Management
 
-- **Clock and Sensitive Signals:** If the Pico uses an external clock or if there are any high-frequency PWM signals, treat them similarly to high-speed data lines – short and referenced to ground. Any **ADC signal lines** coming from the analog multiplexer or sensor connectors should be routed with extra care: these are high-impedance and susceptible to noise. Keep analog trace lengths **very short** from the source to the ADC input on the Pico, and if possible route them on the top layer directly into the Pico’s ADC pins to avoid vias. If an analog trace must travel any distance, consider running it as a single-ended trace with a ground guard trace alongside it (a guard trace is a grounded trace that runs parallel, providing shielding – though be mindful of added capacitance). At minimum, ensure analog traces are well separated from any fast digital traces to prevent capacitive coupling. They can also be routed on the bottom layer if that area is quieter, but still keep them over the ground plane (Layer 2) and away from the switching regulator area or LED driver outputs. You might designate a portion of the board for analog (the multiplexer and whatever it’s sampling) and keep digital noisy circuits (like RS-485 transceiver and LED drivers) slightly away from that area. This physical separation, plus the continuous ground plane, helps maintain low noise on the ADC readings. If the ADC multiplexer connects to external sensors via connectors, route those connector pins to the MUX and then to Pico ADC with minimal loop area, perhaps with a local analog ground reference on the connector if needed.  
+- **Input Voltage**: 4.2V to 18V DC (via barrel jack connector)
+- **Regulation**: AP62300TWU buck converter providing 3.3V at up to 3A
+- **Efficiency**: High-efficiency switching regulator with low dropout
+- **Protection**: Input protection and power indicator LED
+- **Flexibility**: Can be powered via USB or external DC supply
 
-- **Power Distribution Routing:** With an internal power plane for 3.3 V and 9 V, the need for long power traces is reduced. However, be sure to **use vias liberally to tap the power plane** near each consumer. For instance, where the Pico’s 3.3 V pin connects, drop a via from that pad to the 3.3 V plane right beneath it; likewise, each LED driver’s VDD pin should via to the 3.3 V plane close by. The same goes for ground: although ground is a plane on Layer 2, any component ground pad on Layer 1 should have a via to that ground plane extremely close to the pad (usually through the pad itself or a via adjacent to it). This ensures the power and ground currents have a **short, low-impedance path** to the planes. **Wide traces** or pours should be used for any high-current paths not fully handled by the plane. For example, the 9 V input from a DC jack or terminal may go to the voltage regulator input – use a short, wide trace (or a small pour) from the connector to the regulator VIN pin to handle the current. The same for the regulator’s output: connect it to the 3.3 V plane with a short wide trace or multiple vias to distribute current into the plane. Aim for at least **40-50 mil (1 mm)** width (or more) on any trace carrying significant current (e.g. LED supply or 9 V input) if it’s not on a plane, to reduce resistive drop and heating. Also, distribute the **decoupling capacitors** across the board: place a 0.1 µF (or similar) ceramic decoupler as close as possible to each power pin of the Pico and each IC. The capacitor’s ground should via down to the ground plane right next to the cap pad, and the 3.3 V side should via to the 3.3 V plane (if the cap isn’t directly on the plane layer). This way the high-frequency currents from the IC’s switching go through the cap into the ground plane in a very tight loop ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,voltages%20and%20signals%2C%20reduces%20EMI)). In summary, use the power plane for primary distribution, use **short, wide traces** where needed for connections to plane and between components, and **sprinkle decoupling caps** at every IC to stabilize the supply locally.  
+### 📊 Analog Inputs (16-Channel)
 
-- **Avoiding Crosstalk and Noise:** Crosstalk is mitigated by the presence of the ground plane, but layout choices are still important. **Avoid running parallel traces** carrying high-speed signals over long distances, especially on the same layer, unless they are intended to be a coupled pair. If signals must run in parallel, increase the spacing between them to reduce capacitive coupling (greater separation or interleaving a ground trace can cut crosstalk). When changing layers (using a via), try to keep the return path continuity – e.g. if a high-speed trace moves from the top to bottom, provide a nearby ground via so the return current can jump to the other side’s ground easily. As a general rule, try to route **orthogonal** when going from one layer to another (for instance, if top-layer traces run mostly left-right, route bottom-layer traces mainly top-bottom) – this reduces broadside coupling between layers. The ground plane in between also helps here by providing separation. For the key matrix signals (likely slow row/column scans), crosstalk is not a big concern, but you still should avoid entangling them with fast lines; route the key matrix lines on bottom or away from SPI/RS485 lines. If using any crystal or high-speed clock on the Pico, keep its traces short and ground-flood around it if possible. In short, maintain **clearance between critical traces**, use the ground plane as a shield, and route in a topology that prevents noisy loops. By following these practices, the layout will minimize unwanted coupling and ensure signal integrity for both digital and analog sections.  
+- **Multiplexer**: CD74HC4067 16:1 analog multiplexer
+- **Resolution**: 12-bit ADC resolution (0-4095 digital values)
+- **Voltage Range**: 0V to 3.3V analog input range
+- **Reference**: Precision LM4040DBZ-3 3.0V voltage reference for accuracy
+- **Software Control**: Channel selection via GPIO control lines
+- **Connectors**: 16× 3-pin screw terminals for easy field wiring
 
-- **Routing Order and Planning:** Begin routing with the most critical signals first (e.g. RS-485 pair, SPI bus, clock lines), then medium-speed or analog signals, and finally the slow/GPIO lines. This ensures that the fastest signals get the most direct paths. You can fan out the Pico’s pins with short vias if needed to reach the inner planes or bottom layer, but try to keep high-speed fan-out on the top layer if possible (thanks to 4 layers, many signals can be routed without having to via off the top layer except to reach power or ground). Use a consistent via size for signal vias (e.g. ~0.3–0.4 mm drill through vias are common) that the fab can reliably make; avoid unnecessarily large vias that eat up space, but also avoid microvias since they’re not needed here. Ensure all **net classes** (like differential pairs for RS485, or any impedance-controlled lines) are assigned proper rules in the PCB design tool so you can maintain spacing/width easily. Keep in mind manufacturability as you route – do not route traces too close to component pads or holes, leave room for soldering (especially if using any through-hole connectors or the Pico’s pin headers). Finally, perform a design rule check (DRC) to verify that trace widths, clearances, and via hole sizes meet the PCB fab’s capabilities (common minimums are 4–6 mil trace/space and 0.3 mm via hole for standard processes; our board size allows us to use safer values like ≥6 mil traces and ≥0.4 mm vias to be well within manufacturable limits ([PCB Routing: Best Practices for Optimized Signal Flow - Arshon Inc. Blog](https://arshon.com/blog/pcb-routing-best-practices-for-optimized-signal-flow/#:~:text=Design%20rules%20ensure%20manufacturability%20and,shorts%2C%20opens%2C%20or%20signal%20degradation))). Good routing and planning will result in a board that is both electrically sound and easy to fabricate.  
+### ⌨️ Keypad Matrix Interface (8×8)
 
-## 4. Via Placement and Thermal Management
+- **Matrix Size**: 8 rows × 8 columns (64 keys maximum)
+- **Connectors**: 2× 16-pin IDC headers for row/column connections
+- **Protection**: BAT54J Schottky diodes on every line for ESD protection
+- **Pull-ups**: Integrated pull-up resistors for reliable scanning
+- **Flexibility**: Supports various keypad sizes up to 8×8
 
-Vias play a crucial role in both electrical connectivity (especially on a multilayer board) and in thermal dissipation. Here are recommendations on via usage and thermal design considerations:
+### 🔗 Communication Interfaces
 
-- **Power and Ground Via Stitching:** Use **plenty of vias to connect planes to component pads** and to stitch copper pours together. Every power pin of the Pico and other ICs should connect to the 3.3 V plane (Layer 3) through a via close to the pin (if the pin itself isn’t directly on that plane). Similarly, every ground pin should have a via to the ground plane (Layer 2) very near the pad. For decoupling capacitors, place 1–2 vias from the cap’s ground pad straight down to the ground plane, and another via from the cap’s power pad to the power plane (if the power pad isn’t already connected by a top trace). This **minimizes the loop area** of decoupling circuits, allowing them to shunt noise effectively ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,voltages%20and%20signals%2C%20reduces%20EMI)). Distribute **via stitching** along the ground pour on the bottom layer as well – for example, put ground vias at regular intervals (e.g. every 10–15 mm) around the board edge tying bottom copper to the main ground plane. This creates a ground “fence” that can help contain EMI and also strengthens the mechanical attachment of the copper pours. If the key matrix or other connectors are at the board edges, surround their signal pins with a few ground vias to maintain a solid return path near those connections. In the RS-485 section, ensure the transceiver’s ground and the connector’s ground (if the RS485 connector has a ground pin or shield) are tied with multiple vias to the ground plane, because the RS-485 currents will return via ground. Also, **stitch the power plane** to top/bottom layer where appropriate: for instance, if you have a top-side 3.3 V pour in some area to feed a cluster of components, add vias between that pour and the Layer 3 plane so they share current. Overall, a generous use of through-hole vias to interconnect layers will result in low impedance paths for both DC and high-frequency return currents, improving power distribution and signal integrity.
+#### I2C Interface
 
-- **Thermal Vias and Copper Pour for Heat:** Identify components that will dissipate notable power (likely the voltage regulator and possibly the LED driver ICs if they sink a lot of LED current). For these parts, use **thermal vias** to conduct heat from the component pads to the internal planes and opposite side copper. For example, if the voltage regulator is a switching regulator in a QFN or has a thermal pad, place an array of vias (e.g. 4–9 small vias of ~0.3 mm) in the pad or directly adjacent to it, going down to the ground plane or a large copper area on Layer 3 or bottom. This will draw heat into the copper planes which act as heatsinks, lowering the regulator’s temperature. Even for a linear regulator (if used), its ground tab or output tab can be connected to a sizable copper area on the top and multiple vias into the ground plane for heat spreading. Likewise, any LED driver chips (especially if driving many LEDs at significant current) should have their ground or output pad soldered to a copper pour with thermal vias underneath. **Placing thermal vias under high-power ICs or near power regulators can significantly reduce their temperature by conducting heat away** ([Thermal Vias in PCB: A Comprehensive Guide to Heat Management](https://jlcpcb.com/blog/thermal-vias-in-pcb#:~:text=Strategic%20placement%20of%20thermal%20vias,these%20components%2C%20enhancing%20overall%20performance)). If the LED drivers are driving external LEDs via pins, ensure those pins have decent copper and maybe vias to distribute the current and heat (e.g. if an LED driver sinks current to ground through a pin, that pin’s connection to ground plane should be solid and possibly via-reinforced). Additionally, consider using a heavier copper weight (e.g. 2 oz copper) for inner layers if the LED currents are high, as thicker copper combined with thermal vias improves current and heat handling – although standard 1 oz is usually fine for moderate currents on a plane.
+- **Pins**: SDA (GPIO2), SCL (GPIO3)
+- **Pull-ups**: 2.2kΩ pull-up resistors to 3.3V
+- **Connector**: 4-pin terminal block (VCC, GND, SDA, SCL)
+- **Voltage**: 3.3V logic levels
 
-- **Via Types – Through-Hole vs. Blind/Buried:** For this board, **standard through-hole vias** are recommended for all signal and power connections. Through vias (plated through all layers) are the most common and cost-effective, and they suffice given the board size and component pitch we have. There is no compelling reason here to use blind or buried vias (which only go through some layers) – those add significant fabrication cost and complexity, and are typically reserved for very high density or high-frequency designs ([pcb - Blind/buried vs. through hole vias? - Electrical Engineering Stack Exchange](https://electronics.stackexchange.com/questions/25429/blind-buried-vs-through-hole-vias#:~:text=Blind%20and%20buried%20vias%20add,layers%20are%20stacked%20before%20drilling)). Our layout can be achieved with through-hole vias given the Pico and other components are relatively low pin-count and we have four layers to work with. Using through vias also simplifies manufacturing and ensures good reliability (each via is a solid barrel through the board). **Hole size** can be around 0.3–0.4 mm drill with 0.6–0.8 mm pad, which is a common via size that balances electrical performance and manufacturability. This will easily handle the currents for decoupling and signal vias. If any via needs to carry higher current (for example, connecting a plane to a connector carrying 1–2 A), you can use multiple vias in parallel or a slightly larger via diameter to reduce resistance. Avoiding microvias or blind vias means we don’t need any extra fabrication steps – this keeps the board simpler and cheaper to produce. In summary, **use through-hole vias everywhere** for robustness and cost-saving, and only consider advanced via techniques if you absolutely cannot route a critical net otherwise (which is unlikely in this breakout board scenario).
+#### UART Interface  
 
-- **Thermal Relief Pads on Pours:** When connecting vias or through-hole component pads to planes (like the ground plane or power plane), use thermal relief patterns as appropriate. For instance, the connectors or pin headers of the Pico module that connect to ground should have thermal relief spokes to the ground plane copper. This ensures that when soldering, the heat is not instantly conducted away by the entire plane (which would make soldering difficult). Most PCB CAD tools will automatically apply thermal relief to through-hole pads on plane layers – keep this enabled for manufacturability. However, for **vias** (like our thermal vias or stitching vias), we usually want them solidly connected (no thermal relief) to maximize thermal conduction and electrical connectivity, since we won’t be soldering to those tiny vias. Thus, specify in the design rules that via connections to planes are solid. For through-hole components like a barrel jack or terminal block for power, thermal spokes on their pads are advisable so they can be hand-soldered without issue.  
+- **Pins**: TX (GPIO0), RX (GPIO1)
+- **Connector**: 4-pin terminal block (VCC, GND, TX, RX)
+- **Voltage**: 3.3V logic levels
+- **Usage**: Serial communication, debugging, or external device control
 
-- **Manufacturability Considerations:** The design choices above (generous spacing, through vias, etc.) are made with manufacturability in mind. Ensure **all component footprints** are sufficiently spaced to avoid solder bridging and to allow placement (for example, don’t put the RS-485 chip so close to the Pico module that there’s no room to route or to solder). Maintain at least the PCB manufacturer’s minimum **silkscreen and soldermask clearances** as well, especially around fine-pitch parts if any. It’s wise to stick to **proven design rules** (trace width/clearance and via specifications) that mainstream PCB fabs handle easily ([PCB Routing: Best Practices for Optimized Signal Flow - Arshon Inc. Blog](https://arshon.com/blog/pcb-routing-best-practices-for-optimized-signal-flow/#:~:text=Design%20rules%20ensure%20manufacturability%20and,shorts%2C%20opens%2C%20or%20signal%20degradation)). For example, using 6 mil (0.15 mm) or wider traces and spaces wherever possible will reduce the chance of fabrication issues, even if the fab can do 4 mil. Similarly, annular ring for vias should be adequate (e.g. ≥ 0.3 mm) to account for drill tolerances. By incorporating these manufacturability considerations and robust via placement, the board will not only perform well electrically (with good signal integrity and power integrity), but will also be straightforward and cost-effective to fabricate and assemble.
+#### SPI Interfaces (8 Outputs)
 
-**Summary:** In this 4-layer Raspberry Pi Pico breakout board design, we strike a balance between compactness and practicality. A board of roughly 75 × 50 mm can fit the Pico and all peripherals with proper spacing. The 4-layer stack-up (Signals on outer layers, solid Ground inner, split Power inner) provides a strong foundation for low-noise and reliable routing. High-speed signals are kept short and reference the ground plane, analog routes are isolated, and power is delivered through low-impedance planes with ample decoupling. Vias are used extensively to tie everything together electrically and thermally – standard through-hole vias ensure the design remains economical. By following these guidelines for layer stack-up, routing, and via placement, the result will be a robust PCB that meets performance requirements and is manufacturable with standard PCB fabrication processes. The design will have **good signal integrity, stable power rails, and proper heat dissipation**, making the Pico and its peripherals operate reliably in the final application.  
+- **Outputs**: 8× independent SPI chip select lines
+- **Connectors**: 6-pin headers per SPI output
+- **Pinout**: VCC, GND, MOSI, MISO, SCLK, CS
+- **Shared Bus**: Common MOSI, MISO, SCLK with individual chip selects
+- **Applications**: Multiple SPI devices, sensor networks, display modules
 
-**Sources:** The recommendations above are informed by standard PCB design practices and guidelines for high-speed and mixed-signal boards. For example, maintaining short trace lengths minimizes parasitic effects ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,signal%20layer%20arrangement%20in%20a)), and using a contiguous ground plane with an adjacent power plane improves power delivery and noise immunity ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,and%20minimizes%20noise)). Ensuring decoupling capacitors are placed close to power pins with short connections is a well-known technique to stabilize supply lines ([High-Speed PCB Design: Tips and Techniques – MJS Designs](https://mjsdesigns.com/high-speed-pcb-design-tips-and-techniques/#:~:text=,voltages%20and%20signals%2C%20reduces%20EMI)). Efficient heat spreading through thermal vias is crucial for regulators and drivers ([Thermal Vias in PCB: A Comprehensive Guide to Heat Management](https://jlcpcb.com/blog/thermal-vias-in-pcb#:~:text=Strategic%20placement%20of%20thermal%20vias,these%20components%2C%20enhancing%20overall%20performance)). Additionally, it’s noted that blind/buried vias are typically avoided in designs unless necessary, due to cost and complexity ([pcb - Blind/buried vs. through hole vias? - Electrical Engineering Stack Exchange](https://electronics.stackexchange.com/questions/25429/blind-buried-vs-through-hole-vias#:~:text=Blind%20and%20buried%20vias%20add,layers%20are%20stacked%20before%20drilling)). These principles, combined with data from Raspberry Pi Pico hardware documentation (board dimensions, etc.) ([Pico H/Pico W Development Boards - Raspberry Pi | DigiKey](https://www.digikey.com/en/product-highlight/r/raspberry-pi/pico-h-and-pico-w-development-boards#:~:text=%2A%2040,11n)), have guided the above optimal 4-layer PCB stack-up and layout strategy.
+### 🖥️ Display Controller
+
+- **IC**: TM1639 LED display controller
+- **Interface**: 3-wire serial (DIO, CLK, STB)
+- **Capability**: Drive 8×8 LED matrix or multiple 7-segment displays
+- **Features**: Built-in key scanning, adjustable brightness, minimal GPIO usage
+- **Connector**: 6-pin header with standard TM1639 pinout
+
+### 🎛️ Additional I/O
+
+- **PWM Output**: Dedicated PWM output with 3-pin connector
+- **Test Points**: Multiple test points for debugging and measurement
+- **User LED**: Power-on indicator LED
+- **Mounting**: 4× mounting holes for secure installation
+
+## 📋 Technical Specifications
+
+### Electrical Characteristics
+
+| Parameter             | Min | Typ | Max  | Unit |
+| --------------------- | --- | --- | ---- | ---- |
+| Input Voltage         | 4.2 | 9.0 | 18.0 | V    |
+| Output Voltage        | -   | 3.3 | -    | V    |
+| Output Current        | -   | -   | 3.0  | A    |
+| ADC Resolution        | -   | 12  | -    | bits |
+| ADC Reference         | -   | 3.0 | -    | V    |
+| Operating Temperature | -20 | 25  | 85   | °C   |
+
+### Physical Dimensions
+
+- **PCB Size**: 99.7 × 99.1 mm
+- **Mounting Holes**: 4× M3 holes
+- **Connector Types**: Screw terminals, pin headers, IDC connectors
+- **Layer Count**: 4-layer PCB design
+
+## 🔧 Hardware Setup
+
+### 1. Power Connection
+
+- DC Input: Connect 4.2V to 18V DC to J2 barrel connector
+- USB Power: Connect USB cable to Raspberry Pi Pico (alternative)
+
+### 2. Analog Inputs (AN1-AN16)
+
+- Signal Range: 0V to 3.3V maximum
+- Connector: 3-pin screw terminals
+- Pinout: Signal, VDDA, GND
+
+### 3. Keypad Matrix
+
+- Row Connector (JR1-JR8): Connect keypad rows 1-8
+- Column Connector: Connect keypad columns 1-8
+- Matrix Size: Up to 8×8 (64 keys)
+
+### 4. Communication Interfaces
+
+- I2C (J30): VCC(3.3V), GND, SDA, SCL
+- UART (J31): VCC(3.3V), GND, TX, RX  
+- SPI (JSPI1-JSPI7): VCC, GND, MOSI, MISO, SCLK, CS
+
+## 🔨 Assembly Instructions
+
+### Required Components
+
+- 1× Raspberry Pi Pico (with headers soldered)
+- 1× Signalbridge PCB
+- Connectors (screw terminals, pin headers as needed)
+- Power supply (4.2V to 18V DC)
+
+### Assembly Steps
+
+1. **Inspect PCB**: Check for any manufacturing defects
+2. **Install Raspberry Pi Pico**: Insert Pico into main socket (U4 position)
+3. **Connect Power**: Wire DC supply to J2 barrel connector
+4. **Test Power**: Verify 3.3V output and LED indicator
+5. **Install Connectors**: Solder required connectors for your application
+6. **Test Interfaces**: Verify I2C, SPI, and ADC functionality
+
+### Troubleshooting
+
+- **No Power LED**: Check input voltage and connections
+- **ADC Readings Incorrect**: Verify voltage reference and input range
+- **I2C Not Working**: Check pull-up resistors and wiring
+- **Keypad Issues**: Verify matrix connections and ESD protection
+
+## 📁 Repository Structure
+
+signalbridge-board/
+├── README.md                   # Project documentation
+├── assets/                     # Images, logos, or other asset files
+├── datasheets/                 # Component datasheets
+├── gerbers/                    # Gerber files for PCB fabrication
+├── library/                    # Custom or third-party KiCad libraries
+├── production/                 # Production-related outputs/files
+├── pi_controller.kicad_pcb     # Main KiCad PCB layout file
+├── pi_controller.kicad_sch     # Main KiCad schematic file
+├── pi_controller.kicad_pro     # KiCad project file
+├── pi_controller.png           # Image/preview of the PCB
+
+## 🔧 Pin Assignments
+
+### Raspberry Pi Pico Pin Usage
+
+| GPIO  | Function  | Description               |
+| ----- | --------- | ------------------------- |
+| 0     | UART0_TX  | UART transmit             |
+| 1     | UART0_RX  | UART receive              |
+| 2     | SDA       | I2C data line             |
+| 3     | SCL       | I2C clock line            |
+| 4-9   | ROW1-ROW6 | Keypad matrix rows        |
+| 10    | ADC_MUX_A | ADC multiplexer control A |
+| 11    | ADC_MUX_B | ADC multiplexer control B |
+| 12    | ADC_MUX_C | ADC multiplexer control C |
+| 13    | ADC_MUX_D | ADC multiplexer control D |
+| 14-21 | COL1-COL8 | Keypad matrix columns     |
+| 22    | PWM_OUT   | PWM output                |
+| 26    | ADC0      | Multiplexed analog input  |
+| 27    | CS_LED    | TM1639 strobe             |
+| 28    | CS_KEY    | TM1639 data I/O           |
+
+### SPI Chip Select Assignments
+
+| Signal | GPIO   | Description  |
+| ------ | ------ | ------------ |
+| CS1    | GPIO5  | SPI device 1 |
+| CS2    | GPIO6  | SPI device 2 |
+| CS3    | GPIO7  | SPI device 3 |
+| CS4    | GPIO8  | SPI device 4 |
+| CS5    | GPIO9  | SPI device 5 |
+| CS6    | GPIO16 | SPI device 6 |
+| CS7    | GPIO17 | SPI device 7 |
+| CS8    | GPIO18 | SPI device 8 |
+
+### Shared SPI Signals
+
+| Signal | GPIO   | Description              |
+| ------ | ------ | ------------------------ |
+| MOSI   | GPIO19 | SPI Master Out, Slave In |
+| MISO   | GPIO20 | SPI Master In, Slave Out |
+| SCLK   | GPIO21 | SPI Clock                |
+
+## 🛡️ Safety and Compliance
+
+### Electrical Safety
+
+- Input voltage: 4.2V to 18V DC only
+- Maximum current: 3A output
+- ESD protection: BAT54J diodes on all external interfaces
+- Reverse polarity: Protected by input diode
+
+### Usage Guidelines
+
+- Do not exceed maximum input voltage (18V)
+- Ensure proper grounding for all analog measurements
+- Use appropriate wire gauge for current requirements
+- Follow proper ESD handling procedures
+
+## 📄 License
+
+This project is released under the [**MIT License**](LICENSE).
+
+## 🤝 Contributing
+
+We welcome contributions to improve Signalbridge! Here's how you can help:
+
+### Hardware Improvements
+
+- PCB layout optimizations
+- Additional connector options
+- Component substitutions for better availability
+- Cost reduction improvements
+
+### Software Development
+
+- Additional driver libraries
+- Example projects
+- Documentation improvements
+- Bug fixes and optimizations
+
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Issue Reporting
+
+Please use GitHub Issues to report:
+
+- Hardware design problems
+- Software bugs
+- Documentation errors
+- Feature requests
+
+## 📞 Support
+
+### Community Support
+
+- **GitHub Issues**: Report bugs and request features
+- **Discussions**: General questions and project sharing
+- **Wiki**: Community-maintained documentation
+
+### Documentation
+
+- **Schematic**: Detailed circuit diagrams
+- **PCB Layout**: Layer stackup and routing
+- **Assembly Guide**: Step-by-step assembly instructions
+- **User Manual**: Comprehensive usage guide
+
+## 🏆 Acknowledgments
+
+- **Raspberry Pi Foundation** for the excellent Pico microcontroller
+- **KiCad Development Team** for the outstanding PCB design tools
+- **Open Source Community** for inspiration and shared knowledge
+- **Component Manufacturers** for detailed datasheets and application notes
+
+## 📈 Roadmap
+
+### Version 2.0 Features (Planned)
+
+- [ ] USB-C connector option
+- [ ] CAN bus interface
+
+### Long-term Goals
+
+- [ ] Industrial enclosure design
+- [ ] DIN rail mounting option
+- [ ] Higher current power supply (5A)
+- [ ] Isolated I/O options
+- [ ] Professional certification (CE, FCC)
+
+---
+
+Made with ❤️ for the maker community
+
+Signalbridge - Expanding the possibilities of Raspberry Pi Pico
