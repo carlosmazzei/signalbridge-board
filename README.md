@@ -15,7 +15,7 @@
 Signalbridge is a feature-rich breakout board designed to unlock the full potential of the Raspberry Pi Pico microcontroller. This board transforms the Pico into a powerful controller suitable for industrial automation, IoT projects, robotics, and educational applications.
 
 > [!TIP]
-> This firmware is designed for the Raspberry Pi Pico.
+> This board is designed for the Raspberry Pi Pico.
 
 Related repos:
 
@@ -171,20 +171,6 @@ Related repos:
 - **ADC Readings Incorrect**: Verify voltage reference and input range
 - **I2C Not Working**: Check pull-up resistors and wiring
 - **Keypad Issues**: Verify matrix connections and ESD protection
-
-## 📁 Repository Structure
-
-signalbridge-board/
-├── README.md                   # Project documentation
-├── assets/                     # Images, logos, or other asset files
-├── datasheets/                 # Component datasheets
-├── gerbers/                    # Gerber files for PCB fabrication
-├── library/                    # Custom or third-party KiCad libraries
-├── production/                 # Production-related outputs/files
-├── pi_controller.kicad_pcb     # Main KiCad PCB layout file
-├── pi_controller.kicad_sch     # Main KiCad schematic file
-├── pi_controller.kicad_pro     # KiCad project file
-├── pi_controller.png           # Image/preview of the PCB
 
 ## 🔧 Pin Assignments
 
