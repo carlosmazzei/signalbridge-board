@@ -1,0 +1,44 @@
+name: Create JLCPCB Release
+
+on:
+  push:
+    tags:
+      - 'rev*' # Triggers the workflow whenever a tag like 'rev1' is pushed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4 # Downloads your repository's code
+
+    - name: Create JLCPCB ZIP
+      id: create_zip
+      run: |
+        # Check if the jlcpcb folder exists
+        if [ -d "jlcpcb" ]; then
+          ZIP_NAME="jlcpcb_release_${{ github.ref_name }}.zip"
+          echo "Creating ZIP file: $ZIP_NAME from jlcpcb/ folder"
+          zip -r $ZIP_NAME jlcpcb/
+          echo "zip_file=$ZIP_NAME" >> $GITHUB_OUTPUT
+        else
+          echo "Error: The 'jlcpcb/' folder was not found in the repository."
+          exit 1
+        fi
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/') # Ensures it only runs if a tag triggered it
+      with:
+        files: ${{ steps.create_zip.outputs.zip_file }} # Attaches the created ZIP file
+        name: JLCPCB Release ${{ github.ref_name }} # Name of the release on GitHub
+        tag_name: ${{ github.ref_name }} # Uses the tag name as the release name
+        body: | # Description for the release
+          This release contains the ready-for-fabrication files for JLCPCB,
+          located in the 'jlcpcb/' folder of the project.
+
+          Version: ${{ github.ref_name }}
+        draft: false # The release will be published immediately
+        prerelease: false # This is not a pre-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Default token for GitHub authentication
