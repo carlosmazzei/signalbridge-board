@@ -1,9 +1,14 @@
+<!-- markdownlint-disable MD033 MD041 -->
 <div align="center">
 <img src="https://github.com/carlosmazzei/signalbridge-controller/blob/main/assets/logo-pimatrix-dark.png#gh-dark-mode-only" alt="Signalbridge" width="150">
 <img src="https://github.com/carlosmazzei/signalbridge-controller/blob/main/assets/logo-pimatrix-light.png#gh-light-mode-only" alt="Signalbridge" width="150">
 </div>
+<!-- markdownlint-enable MD033 MD041 -->
 
-# Signalbridge
+# Signalbridge - Board
+
+![kicad](https://img.shields.io/badge/KiCAD-v9-ff69b4)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **A comprehensive, industrial-grade breakout board for the Raspberry Pi Pico with advanced I/O expansion and control capabilities.**
 
