@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4 # Downloads your repository's code
+      uses: actions/checkout@v5 # Downloads your repository's code
 
     - name: Create JLCPCB ZIP
       id: create_zip
