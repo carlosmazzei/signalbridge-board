@@ -3,4 +3,5 @@
   (lib (name "Module_RaspberryPi_Pico")(type "KiCad")(uri "${KIPRJMOD}/library/RaspberryPi_Pico")(options "")(descr "Raspberry Pi Pico"))
   (lib (name "pi_controller")(type "KiCad")(uri "${KIPRJMOD}/library")(options "")(descr ""))
   (lib (name "AOD4184A")(type "KiCad")(uri "${KIPRJMOD}/library/AOD4184A")(options "")(descr ""))
+  (lib (name "AO4407A")(type "KiCad")(uri "${KIPRJMOD}/library/AO4407A")(options "")(descr "AO4407 footprint"))
 )
