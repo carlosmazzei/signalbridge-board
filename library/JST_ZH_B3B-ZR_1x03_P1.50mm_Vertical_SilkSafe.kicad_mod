@@ -460,4 +460,15 @@
 			(xyz 0 0 0)
 		)
 	)
+	(model "${KIPRJMOD}/library/JST_ZH_B3B-ZR_1x03_P1.50mm_Vertical.step"
+		(offset
+			(xyz 4.5 1.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
 )

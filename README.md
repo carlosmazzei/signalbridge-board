@@ -8,7 +8,7 @@
 # Signalbridge - Board
 
 ![kicad](https://img.shields.io/badge/KiCAD-v9-ff69b4)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-CERN-blue)](LICENSE)
 
 **A comprehensive, industrial-grade breakout board for the Raspberry Pi Pico with advanced I/O expansion and control capabilities.**
 
