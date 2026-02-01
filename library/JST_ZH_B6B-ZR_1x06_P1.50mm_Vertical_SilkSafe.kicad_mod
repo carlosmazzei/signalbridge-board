@@ -604,4 +604,15 @@
 			(xyz 0 0 0)
 		)
 	)
+	(model "${KIPRJMOD}/library/JST_ZH_B6B-ZR_1x06_P1.50mm_Vertical.step"
+		(offset
+			(xyz 9 1.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
 )
