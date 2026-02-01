@@ -10397,7 +10397,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "64d7e0de-c383-4a2f-9c78-ec6386ae845a")
+			(uuid "6e6e84df-b293-45b2-9229-30eaf6615d1f")
 		)
 		(pad "1" connect circle
 			(at 0 0)
@@ -10407,7 +10407,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "64d7e0de-c383-4a2f-9c78-ec6386ae845a")
+			(uuid "bf8fba45-6447-4906-ae8b-278547422739")
 		)
 		(embedded_fonts no)
 	)
@@ -24374,7 +24374,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "62e8caaa-5440-451e-8d02-8abdcfa78cbd")
+			(uuid "a4f37a27-8c56-441d-aa58-23cdb164a581")
 		)
 		(pad "1" connect circle
 			(at 0 0)
@@ -24384,7 +24384,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "62e8caaa-5440-451e-8d02-8abdcfa78cbd")
+			(uuid "7d2477f9-ff70-4567-8111-14d6945776ca")
 		)
 		(embedded_fonts no)
 	)
@@ -32864,7 +32864,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "0f815e88-43ba-42be-906e-daddabf850ea")
+			(uuid "3987cccf-0359-41eb-8354-e31b56abd788")
 		)
 		(pad "1" connect circle
 			(at 0 0)
@@ -32874,7 +32874,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "0f815e88-43ba-42be-906e-daddabf850ea")
+			(uuid "98fe75f3-c108-4f06-92ca-ebbdafc03496")
 		)
 		(embedded_fonts no)
 	)
@@ -42773,7 +42773,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "c5791039-3558-4629-a02a-8e72bca650e8")
+			(uuid "624a3d1e-556f-4c58-8e57-bb5c5da8648f")
 		)
 		(pad "1" connect circle
 			(at 0 0)
@@ -42783,7 +42783,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "c5791039-3558-4629-a02a-8e72bca650e8")
+			(uuid "d6543bff-02f5-4648-b764-8e24ac3278a2")
 		)
 		(embedded_fonts no)
 	)
@@ -63673,7 +63673,7 @@
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -1.225 0.75)
 			(end 1.225 -0.75)
@@ -64558,6 +64558,17 @@
 		)
 		(layer "B.SilkS")
 		(uuid "59f6f405-c2af-427c-8bd0-9fb9e438d04d")
+	)
+	(gr_rect
+		(start 101.3338 78.1812)
+		(end 109.3338 86.1812)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "5c3d1b2f-e595-43fa-9de0-37202cc373a3")
 	)
 	(gr_line
 		(start 92.7354 119.7356)
@@ -83554,8 +83565,7 @@
 		)
 		(polygon
 			(pts
-				(xy 105.283 89.154) (xy 90.6018 89.102846) (xy 90.6018 82.9056) (xy 97.9678 82.9056) (xy 97.9678 82.9056)
-				(xy 105.283 82.9056)
+				(xy 105.283 89.154) (xy 90.6018 89.102846) (xy 90.6018 82.9056) (xy 97.9678 82.9056) (xy 105.283 82.9056)
 			)
 		)
 		(filled_polygon
@@ -83717,9 +83727,9 @@
 		)
 		(polygon
 			(pts
-				(xy 96.1898 79.4004) (xy 97.9678 79.4004) (xy 97.9678 80.4164) (xy 97.9678 80.4164) (xy 97.9678 82.6008)
-				(xy 107.7722 82.6008) (xy 107.7722 76.962) (xy 108.7374 76.962) (xy 108.7374 73.8124) (xy 105.537 73.8124)
-				(xy 105.537 79.2988) (xy 103.4034 79.2988) (xy 103.4034 77.6732) (xy 96.1898 77.6732)
+				(xy 96.1898 79.4004) (xy 97.9678 79.4004) (xy 97.9678 80.4164) (xy 97.9678 82.6008) (xy 107.7722 82.6008)
+				(xy 107.7722 76.962) (xy 108.7374 76.962) (xy 108.7374 73.8124) (xy 105.537 73.8124) (xy 105.537 79.2988)
+				(xy 103.4034 79.2988) (xy 103.4034 77.6732) (xy 96.1898 77.6732)
 			)
 		)
 		(filled_polygon
