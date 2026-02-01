@@ -62083,7 +62083,7 @@
 		(path "/df961cac-50b4-4ebc-87c4-77231053cb9c")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)
@@ -62205,7 +62205,7 @@
 		(path "/08ee05d7-db47-4193-9825-5bbdb38366bb")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)
@@ -62327,7 +62327,7 @@
 		(path "/278dd0d4-2f99-4532-8d78-a1ae7155cea8")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)
@@ -62449,7 +62449,7 @@
 		(path "/f1066b3d-205e-4d51-aaf3-c0ccb9d7c121")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)
@@ -62571,7 +62571,7 @@
 		(path "/e45d7681-60de-4bf5-94b0-17cdc66e00b8")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)
@@ -62693,7 +62693,7 @@
 		(path "/b0b4206a-462b-4d3b-88f7-338219b2fee4")
 		(sheetname "/")
 		(sheetfile "pi_controller.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end -0.04 -1.29)

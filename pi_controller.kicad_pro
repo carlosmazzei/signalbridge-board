@@ -696,11 +696,17 @@
           "label": "MP",
           "name": "MP",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "group_symbols": false,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
