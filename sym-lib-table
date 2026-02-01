@@ -4,4 +4,5 @@
   (lib (name "AOD4184A")(type "KiCad")(uri "${KIPRJMOD}/library/AOD4184A/AOD4184A.kicad_sym")(options "")(descr "MOSFET"))
   (lib (name "Titan_Micro")(type "KiCad")(uri "${KIPRJMOD}/library/Titan_Micro.kicad_sym")(options "")(descr ""))
   (lib (name "AO4407A")(type "KiCad")(uri "${KIPRJMOD}/library/AO4407A/AO4407A.kicad_sym")(options "")(descr "AO4407A P-Channel Mosfet"))
+  (lib (name "Signalbridge")(type "KiCad")(uri "${KIPRJMOD}/library/pi_controller.kicad_sym")(options "")(descr "Signalbridge controller library"))
 )
