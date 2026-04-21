@@ -12,8 +12,18 @@
 
 **A comprehensive, industrial-grade breakout board for the Raspberry Pi Pico with advanced I/O expansion and control capabilities.**
 
-![Board Image](assets/signalbridge-top.png)
-![Board Image](assets/signalbridge-bottom.png)
+![Board Render Top](assets/signalbridge-top.png)
+![Board Render Bottom](assets/signalbridge-bottom.png)
+
+## Fabricated Board
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img src="assets/photo1.jpeg" alt="Fabricated Board - Photo 1" width="32%">
+  <img src="assets/photo2.jpeg" alt="Fabricated Board - Photo 2" width="32%">
+  <img src="assets/photo3.jpeg" alt="Fabricated Board - Photo 3" width="32%">
+</p>
+<!-- markdownlint-enable MD033 -->
 
 ## Overview
 
