@@ -12,8 +12,18 @@
 
 **A comprehensive, industrial-grade breakout board for the Raspberry Pi Pico with advanced I/O expansion and control capabilities.**
 
-![Board Image](assets/signalbridge-top.png)
-![Board Image](assets/signalbridge-bottom.png)
+![Board Render Top](assets/signalbridge-top.png)
+![Board Render Bottom](assets/signalbridge-bottom.png)
+
+## Fabricated Board
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img src="assets/photo1.jpeg" alt="Fabricated Board - Photo 1" height="180">
+  <img src="assets/photo2.jpeg" alt="Fabricated Board - Photo 2" height="180">
+  <img src="assets/photo3.jpeg" alt="Fabricated Board - Photo 3" height="180">
+</p>
+<!-- markdownlint-enable MD033 -->
 
 ## Overview
 
@@ -59,7 +69,6 @@ signalbridge-board/
 The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml`; the `library/` folder and the root `pi_controller.*` files are referenced by `fp-lib-table` / `sym-lib-table`. Renaming any of these will break the project.
 
 ## Features
-
 ### Power Management
 
 - **Input Voltage**: 4.2V to 18V DC (via barrel jack connector)
