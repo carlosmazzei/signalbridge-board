@@ -41,6 +41,23 @@ Related repos:
 - **Comprehensive Protection**: ESD protection on all external interfaces
 - **Professional Grade**: Designed for reliability and expandability
 
+## 📁 Project Structure
+
+```text
+signalbridge-board/
+├── pi_controller.kicad_{pro,sch,pcb,dru,prl}  # Main KiCad 9 project
+├── fp-lib-table, sym-lib-table                # KiCad library tables
+├── fabrication-toolkit-options.json           # Fabrication-Toolkit settings
+├── library/                                   # Custom symbols & footprints
+├── assets/                                    # Board renders & logos
+├── datasheets/                                # Component datasheets (PDF)
+├── jlcpcb/                                    # Fabrication outputs (gerbers, BOM, CPL)
+└── docs/
+    └── PRODUCTION_CHECKLIST.md                # PCBA production & test-point checklist
+```
+
+The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml`; the `library/` folder and the root `pi_controller.*` files are referenced by `fp-lib-table` / `sym-lib-table`. Renaming any of these will break the project.
+
 ## ✨ Features
 
 ### 🔌 Power Management
