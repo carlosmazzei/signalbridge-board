@@ -339,10 +339,6 @@ Please use GitHub Issues to report:
 
 ---
 
-<<<<<<< HEAD
 Made with care for the maker community
-=======
-Made with  for the maker community
->>>>>>> 996553a (Remove all emojis from README)
 
 Signalbridge - Expanding the possibilities of Raspberry Pi Pico
