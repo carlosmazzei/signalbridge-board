@@ -69,7 +69,6 @@ signalbridge-board/
 The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml`; the `library/` folder and the root `pi_controller.*` files are referenced by `fp-lib-table` / `sym-lib-table`. Renaming any of these will break the project.
 
 ## Features
-
 ### Power Management
 
 - **Input Voltage**: 4.2V to 18V DC (via barrel jack connector)
@@ -340,6 +339,10 @@ Please use GitHub Issues to report:
 
 ---
 
+<<<<<<< HEAD
 Made with care for the maker community
+=======
+Made with  for the maker community
+>>>>>>> 996553a (Remove all emojis from README)
 
 Signalbridge - Expanding the possibilities of Raspberry Pi Pico
