@@ -19,9 +19,9 @@
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-  <img src="assets/photo1.jpeg" alt="Fabricated Board - Photo 1" width="300" height="220">
-  <img src="assets/photo2.jpeg" alt="Fabricated Board - Photo 2" width="300" height="220">
-  <img src="assets/photo3.jpeg" alt="Fabricated Board - Photo 3" width="300" height="220">
+  <img src="assets/photo1.jpeg" alt="Fabricated Board - Photo 1" height="180">
+  <img src="assets/photo2.jpeg" alt="Fabricated Board - Photo 2" height="180">
+  <img src="assets/photo3.jpeg" alt="Fabricated Board - Photo 3" height="180">
 </p>
 <!-- markdownlint-enable MD033 -->
 
