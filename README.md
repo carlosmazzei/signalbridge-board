@@ -254,7 +254,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 
 ## 📄 License
 
-This project is released under the [**MIT License**](LICENSE).
+This project is released under the [**CERN Open Hardware Licence**](LICENSE).
 
 ## 🤝 Contributing
 
