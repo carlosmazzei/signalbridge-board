@@ -15,7 +15,7 @@
 ![Board Image](assets/signalbridge-top.png)
 ![Board Image](assets/signalbridge-bottom.png)
 
-## 🚀 Overview
+## Overview
 
 Signalbridge is a feature-rich breakout board designed to unlock the full potential of the Raspberry Pi Pico microcontroller. This board transforms the Pico into a powerful controller suitable for industrial automation, IoT projects, robotics, and educational applications.
 
@@ -41,7 +41,7 @@ Related repos:
 - **Comprehensive Protection**: ESD protection on all external interfaces
 - **Professional Grade**: Designed for reliability and expandability
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 signalbridge-board/
@@ -58,9 +58,9 @@ signalbridge-board/
 
 The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml`; the `library/` folder and the root `pi_controller.*` files are referenced by `fp-lib-table` / `sym-lib-table`. Renaming any of these will break the project.
 
-## ✨ Features
+## Features
 
-### 🔌 Power Management
+### Power Management
 
 - **Input Voltage**: 4.2V to 18V DC (via barrel jack connector)
 - **Regulation**: AP62300TWU buck converter providing 3.3V at up to 3A
@@ -68,7 +68,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Protection**: Input protection and power indicator LED
 - **Flexibility**: Can be powered via USB or external DC supply
 
-### 📊 Analog Inputs (16-Channel)
+### Analog Inputs (16-Channel)
 
 - **Multiplexer**: CD74HC4067 16:1 analog multiplexer
 - **Resolution**: 12-bit ADC resolution (0-4095 digital values)
@@ -77,7 +77,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Software Control**: Channel selection via GPIO control lines
 - **Connectors**: 16× 3-pin screw terminals for easy field wiring
 
-### ⌨️ Keypad Matrix Interface (8×8)
+### Keypad Matrix Interface (8×8)
 
 - **Matrix Size**: 8 rows × 8 columns (64 keys maximum)
 - **Connectors**: 2× 16-pin IDC headers for row/column connections
@@ -85,7 +85,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Pull-ups**: Integrated pull-up resistors for reliable scanning
 - **Flexibility**: Supports various keypad sizes up to 8×8
 
-### 🔗 Communication Interfaces
+### Communication Interfaces
 
 #### I2C Interface
 
@@ -109,7 +109,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Shared Bus**: Common MOSI, MISO, SCLK with individual chip selects
 - **Applications**: Multiple SPI devices, sensor networks, display modules
 
-### 🖥️ Display Controller
+### Display Controller
 
 - **IC**: TM1639 LED display controller
 - **Interface**: 3-wire serial (DIO, CLK, STB)
@@ -117,14 +117,14 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Features**: Built-in key scanning, adjustable brightness, minimal GPIO usage
 - **Connector**: 6-pin header with standard TM1639 pinout
 
-### 🎛️ Additional I/O
+### Additional I/O
 
 - **PWM Output**: Dedicated PWM output with 3-pin connector
 - **Test Points**: Multiple test points for debugging and measurement
 - **User LED**: Power-on indicator LED
 - **Mounting**: 4× mounting holes for secure installation
 
-## 📋 Technical Specifications
+## Technical Specifications
 
 ### Electrical Characteristics
 
@@ -144,7 +144,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **Connector Types**: Screw terminals, pin headers, IDC connectors
 - **Layer Count**: 4-layer PCB design
 
-## 🔧 Hardware Setup
+## Hardware Setup
 
 ### 1. Power Connection
 
@@ -169,7 +169,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - UART (J31): VCC(3.3V), GND, TX, RX  
 - SPI (JSPI1-JSPI7): VCC, GND, MOSI, MISO, SCLK, CS
 
-## 🔨 Assembly Instructions
+## Assembly Instructions
 
 ### Required Components
 
@@ -194,7 +194,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - **I2C Not Working**: Check pull-up resistors and wiring
 - **Keypad Issues**: Verify matrix connections and ESD protection
 
-## 🔧 Pin Assignments
+## Pin Assignments
 
 ### Raspberry Pi Pico Pin Usage
 
@@ -236,7 +236,7 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 | MISO   | GPIO20 | SPI Master In, Slave Out |
 | SCLK   | GPIO21 | SPI Clock                |
 
-## 🛡️ Safety and Compliance
+## Safety and Compliance
 
 ### Electrical Safety
 
@@ -252,11 +252,11 @@ The `jlcpcb/` folder name is referenced by `.github/workflows/release_jlcpcb.yml
 - Use appropriate wire gauge for current requirements
 - Follow proper ESD handling procedures
 
-## 📄 License
+## License
 
 This project is released under the [**CERN Open Hardware Licence**](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to improve Signalbridge! Here's how you can help:
 
@@ -291,7 +291,7 @@ Please use GitHub Issues to report:
 - Documentation errors
 - Feature requests
 
-## 📞 Support
+## Support
 
 ### Community Support
 
@@ -306,14 +306,14 @@ Please use GitHub Issues to report:
 - **Assembly Guide**: Step-by-step assembly instructions
 - **User Manual**: Comprehensive usage guide
 
-## 🏆 Acknowledgments
+## Acknowledgments
 
 - **Raspberry Pi Foundation** for the excellent Pico microcontroller
 - **KiCad Development Team** for the outstanding PCB design tools
 - **Open Source Community** for inspiration and shared knowledge
 - **Component Manufacturers** for detailed datasheets and application notes
 
-## 📈 Roadmap
+## Roadmap
 
 ### Version 2.0 Features (Planned)
 
@@ -330,6 +330,6 @@ Please use GitHub Issues to report:
 
 ---
 
-Made with ❤️ for the maker community
+Made with care for the maker community
 
 Signalbridge - Expanding the possibilities of Raspberry Pi Pico
